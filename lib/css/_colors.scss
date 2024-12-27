@@ -1,0 +1,52 @@
+@use 'sass:color';
+$scheme: 1 !default;
+
+$primary: hsl(196, 79%, 29%);
+$secondary: color.adjust($primary, $hue: 190, $saturation: 25%, $lightness: 10%);
+$accent: color.adjust($secondary, $hue: 24, $saturation: -10%, $lightness: 25%);
+
+@if $scheme ==2 {
+
+    $primary: hsl(293, 47%, 24%);
+    $secondary: hsl(110, 64%, 33%);
+    $accent: hsl(63, 69%, 53%);
+
+}
+
+@if $scheme == 3 {
+
+    $primary: hsl(165, 70%, 17%);
+    $secondary: color.complement($primary);
+    $secondary: color.adjust($secondary, $saturation: 70%, $lightness: 20%, $hue: -60);
+    $accent: color.adjust($secondary, $hue: 60, $saturation: -20%, $lightness: 50%);
+
+}
+
+@if $scheme == 4 {
+    $primary: hsl($hue: 22, $saturation: 50%, $lightness: 20%);
+    $secondary: hsl($hue: 165, $saturation: 80%, $lightness: 25%);
+    $accent: color.adjust($secondary, $hue: -30, $saturation: -40%, $lightness: 40%);
+}
+
+$white: color.mix($primary, white, 15%);
+$primary-light-20: color.mix($primary, white, 20%);
+$primary-light-40: color.mix($primary, white, 40%);
+$primary-light-60: color.mix($primary, white, 60%);
+$primary-light-80: color.mix($primary, white, 80%);
+
+$primary-dark-20: color.mix($primary, black, 20%);
+$primary-dark-40: color.mix($primary, black, 40%);
+$primary-dark-60: color.mix($primary, black, 60%);
+$primary-dark-80: color.mix($primary, black, 80%);
+$black: color.mix($primary, black, 90%);
+
+
+$secondary-light-20: color.mix($secondary, white, 20%);
+$secondary-light-40: color.mix($secondary, white, 40%);
+$secondary-light-60: color.mix($secondary, white, 60%);
+$secondary-light-80: color.mix($secondary, white, 80%);
+
+$secondary-dark-20: color.mix($secondary, black, 20%);
+$secondary-dark-40: color.mix($secondary, black, 40%);
+$secondary-dark-60: color.mix($secondary, black, 60%);
+$secondary-dark-80: color.mix($secondary, black, 80%);
