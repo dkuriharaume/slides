@@ -1,268 +1,315 @@
 <!DOCTYPE html><html lang="ja-JP"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"><meta name="apple-mobile-web-app-capable" content="yes"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><style>@media screen{body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button{-webkit-tap-highlight-color:transparent;-webkit-appearance:none;appearance:none;background-color:transparent;border:0;color:inherit;cursor:pointer;font-size:inherit;opacity:.8;outline:none;padding:0;transition:opacity .2s linear}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:disabled{cursor:not-allowed;opacity:.15!important}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover{opacity:1}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover:active{opacity:.6}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover:not(:disabled){transition:none}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-prev{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNNjggOTAgMjggNTBsNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-next{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJtMzIgOTAgNDAtNDAtNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen]{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgeD0iMTAiIHk9IjIwIiBjbGFzcz0iYSIgcng9IjUuNjciLz48cGF0aCBkPSJNNDAgNzBIMjBWNTBtMjAgMEwyMCA3MG00MC00MGgyMHYyMG0tMjAgMCAyMC0yMCIgY2xhc3M9ImEiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen]{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgeD0iMTAiIHk9IjIwIiBjbGFzcz0iYSIgcng9IjUuNjciLz48cGF0aCBkPSJNMjAgNTBoMjB2MjBtLTIwIDAgMjAtMjBtNDAgMEg2MFYzMG0yMCAwTDYwIDUwIiBjbGFzcz0iYSIvPjwvc3ZnPg==")}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter]{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNODcuOCA0Ny41Qzg5IDUwIDg3LjcgNTIgODUgNTJIMzVhOC43IDguNyAwIDAgMS03LjItNC41bC0xNS42LTMxQzExIDE0IDEyLjIgMTIgMTUgMTJoNTBhOC44IDguOCAwIDAgMSA3LjIgNC41ek02MCA1MnYzNm0tMTAgMGgyME00NSA0MmgyMCIvPjwvc3ZnPg==") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button.bespoke-marp-presenter-note-bigger{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNMTIgNTBoODBNNTIgOTBWMTAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button.bespoke-marp-presenter-note-smaller{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNMTIgNTBoODAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}}@keyframes __bespoke_marp_transition_reduced_outgoing__{0%{opacity:1}to{opacity:0}}@keyframes __bespoke_marp_transition_reduced_incoming__{0%{mix-blend-mode:plus-lighter;opacity:0}to{mix-blend-mode:plus-lighter;opacity:1}}.bespoke-marp-note,.bespoke-marp-osc,.bespoke-progress-parent{display:none;transition:none}@media screen{::view-transition-group(*){animation-duration:var(--marp-bespoke-transition-animation-duration,.5s);animation-timing-function:ease}::view-transition-new(*),::view-transition-old(*){animation-delay:0s;animation-direction:var(--marp-bespoke-transition-animation-direction,normal);animation-duration:var(--marp-bespoke-transition-animation-duration,.5s);animation-fill-mode:both;animation-name:var(--marp-bespoke-transition-animation-name,var(--marp-bespoke-transition-animation-name-fallback,__bespoke_marp_transition_no_animation__));mix-blend-mode:normal}::view-transition-old(*){--marp-bespoke-transition-animation-name-fallback:__bespoke_marp_transition_reduced_outgoing__;animation-timing-function:ease}::view-transition-new(*){--marp-bespoke-transition-animation-name-fallback:__bespoke_marp_transition_reduced_incoming__;animation-timing-function:ease}::view-transition-new(root),::view-transition-old(root){animation-timing-function:linear}::view-transition-new(__bespoke_marp_transition_osc__),::view-transition-old(__bespoke_marp_transition_osc__){animation-duration:0s!important;animation-name:__bespoke_marp_transition_osc__!important}::view-transition-new(__bespoke_marp_transition_osc__){opacity:0!important}.bespoke-marp-transition-warming-up::view-transition-group(*),.bespoke-marp-transition-warming-up::view-transition-new(*),.bespoke-marp-transition-warming-up::view-transition-old(*){animation-play-state:paused!important}body,html{height:100%;margin:0}body{background:#000;overflow:hidden}svg.bespoke-marp-slide{content-visibility:hidden;opacity:0;pointer-events:none;z-index:-1}svg.bespoke-marp-slide:not(.bespoke-marp-active) *{view-transition-name:none!important}svg.bespoke-marp-slide.bespoke-marp-active{content-visibility:visible;opacity:1;pointer-events:auto;z-index:0}svg.bespoke-marp-slide.bespoke-marp-active.bespoke-marp-active-ready *{animation-name:__bespoke_marp__!important}@supports not (content-visibility:hidden){svg.bespoke-marp-slide[data-bespoke-marp-load=hideable]{display:none}svg.bespoke-marp-slide[data-bespoke-marp-load=hideable].bespoke-marp-active{display:block}}}@media screen and (prefers-reduced-motion:reduce){svg.bespoke-marp-slide *{view-transition-name:none!important}}@media screen{[data-bespoke-marp-fragment=inactive]{visibility:hidden}body[data-bespoke-view=""] .bespoke-marp-parent,body[data-bespoke-view=next] .bespoke-marp-parent{inset:0;position:absolute}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc{view-transition-name:__bespoke_marp_transition_osc__;background:rgba(0,0,0,.65);border-radius:7px;bottom:50px;color:#fff;contain:paint;display:block;font-family:Helvetica,Arial,sans-serif;font-size:16px;left:50%;line-height:0;opacity:1;padding:12px;position:absolute;touch-action:manipulation;transform:translateX(-50%);transition:opacity .2s linear;-webkit-user-select:none;user-select:none;white-space:nowrap;will-change:transform;z-index:1}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>*,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>*{margin-left:6px}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>:first-child,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>:first-child{margin-left:0}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span{opacity:.8}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page]{display:inline-block;min-width:140px;text-align:center}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev]{height:32px;line-height:32px;width:32px}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive{cursor:none}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc{opacity:0;pointer-events:none}body[data-bespoke-view=""] svg.bespoke-marp-slide,body[data-bespoke-view=next] svg.bespoke-marp-slide{height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent{background:#222;display:flex;height:5px;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent+.bespoke-marp-parent{top:5px}body[data-bespoke-view=""] .bespoke-progress-parent .bespoke-progress-bar{background:#0288d1;flex:0 0 0;transition:flex-basis .2s cubic-bezier(0,1,1,1)}body[data-bespoke-view=next]{background:transparent}body[data-bespoke-view=presenter]{background:#161616}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container{display:grid;font-family:Helvetica,Arial,sans-serif;grid-template:"current dragbar next" minmax(140px,1fr) "current dragbar note" 2fr "info    dragbar note" 3em;grid-template-columns:minmax(3px,var(--bespoke-marp-presenter-split-ratio,66%)) 0 minmax(3px,1fr);height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent{grid-area:current;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent svg.bespoke-marp-slide{height:calc(100% - 40px);left:20px;pointer-events:none;position:absolute;top:20px;-webkit-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent svg.bespoke-marp-slide.bespoke-marp-active{filter:drop-shadow(0 3px 10px rgba(0,0,0,.5))}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container{background:#0288d1;cursor:col-resize;grid-area:dragbar;margin-left:-3px;opacity:0;position:relative;transition:opacity .4s linear .1s;width:6px;z-index:10}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container:hover{opacity:1}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container.active{opacity:1;transition-delay:0s}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container{background:#222;cursor:pointer;display:none;grid-area:next;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container iframe.bespoke-marp-presenter-next{background:transparent;border:0;display:block;filter:drop-shadow(0 3px 10px rgba(0,0,0,.5));height:calc(100% - 40px);left:20px;pointer-events:none;position:absolute;top:20px;-webkit-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container{background:#222;color:#eee;grid-area:note;position:relative;z-index:1}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button{height:1.5em;line-height:1.5em;width:1.5em}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-wrapper{display:block;inset:0;position:absolute}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-buttons{background:rgba(0,0,0,.65);border-radius:4px;bottom:0;display:flex;gap:4px;margin:12px;opacity:0;padding:6px;pointer-events:none;position:absolute;right:0;transition:opacity .2s linear}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-buttons:focus-within,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-wrapper:focus-within+.bespoke-marp-presenter-note-buttons,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container:hover .bespoke-marp-presenter-note-buttons{opacity:1;pointer-events:auto}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note{word-wrap:break-word;box-sizing:border-box;font-size:calc(1.1em*var(--bespoke-marp-note-font-scale, 1));height:calc(100% - 40px);margin:20px;overflow:auto;padding-right:3px;scrollbar-color:hsla(0,0%,93%,.5) transparent;scrollbar-width:thin;white-space:pre-wrap;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar{width:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-track{background:transparent}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-thumb{background:hsla(0,0%,93%,.5);border-radius:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note:empty{pointer-events:none}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:first-child{margin-top:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:last-child{margin-bottom:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container{align-items:center;box-sizing:border-box;color:#eee;display:flex;flex-wrap:nowrap;grid-area:info;justify-content:center;overflow:hidden;padding:0 10px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{box-sizing:border-box;display:block;padding:0 10px;white-space:nowrap;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button{height:1.5em;line-height:1.5em;width:1.5em}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page{order:2;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page .bespoke-marp-presenter-info-page-text{display:inline-block;min-width:120px;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time{color:#999;order:1;text-align:left}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{color:#999;order:3;text-align:right}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer:hover{cursor:pointer}}@media print{.bespoke-marp-presenter-info-container,.bespoke-marp-presenter-next-container,.bespoke-marp-presenter-note-container{display:none}}</style><style>@keyframes marp-outgoing-transition-__builtin__pull{0%{animation-timing-function:ease-out}to{transform:translateX(-100%)}}@keyframes marp-incoming-transition-__builtin__pull{0%{z-index:-1}to{z-index:-1}}@keyframes marp-incoming-transition-backward-__builtin__pull{0%{animation-timing-function:ease-out;transform:translateX(-100%)}}@keyframes marp-outgoing-transition-backward-__builtin__pull{}</style><style>@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Noto+Sans+JP:wght@100..900&display=swap");div#\:\$p>svg>foreignObject>section{width:1280px;height:720px;box-sizing:border-box;overflow:hidden;position:relative;scroll-snap-align:center center}div#\:\$p>svg>foreignObject>section:after{bottom:0;content:attr(data-marpit-pagination);padding:inherit;pointer-events:none;position:absolute;right:0}div#\:\$p>svg>foreignObject>section:not([data-marpit-pagination]):after{display:none}/* Normalization */div#\:\$p>svg>foreignObject>section :is(h1,marp-h1){font-size:2em;margin:0.67em 0}div#\:\$p>svg>foreignObject>section video::-webkit-media-controls{will-change:transform}@page{size:1440px 900px;margin:0}@media print{body,html{background-color:#fff;margin:0;page-break-inside:avoid;break-inside:avoid-page}div#\:\$p>svg>foreignObject>section{page-break-before:always;break-before:page}div#\:\$p>svg>foreignObject>section,div#\:\$p>svg>foreignObject>section *{-webkit-print-color-adjust:exact!important;animation-delay:0s!important;animation-duration:0s!important;color-adjust:exact!important;transition:none!important}div#\:\$p>svg[data-marpit-svg]{display:block;height:100vh;width:100vw}}div#\:\$p>svg>foreignObject>:where(section){container-type:size}div#\:\$p>svg>foreignObject>section img[data-marp-twemoji]{background:transparent;height:1em;margin:0 .05em 0 .1em;vertical-align:-.1em;width:1em}
-/* @theme ume-orange */
+/* @theme ume-purple */
 /*
 
 copy ../../images to your project's directory
 
-*/div#\:\$p>svg>foreignObject>section :is(h2,marp-h2),div#\:\$p>svg>foreignObject>section.impact :is(h1,marp-h1){background-image:linear-gradient(to bottom right,hsl(79,71%,67%),hsl(174,42%,26%) 100%);background-clip:text;-webkit-text-fill-color:transparent}div#\:\$p>svg>foreignObject>section:before{content:"";display:block;position:absolute;width:100px;height:100px;background-image:url("./images/ume_logo_mono_2.png");background-position:center;background-size:120%;mix-blend-mode:screen;top:0;right:20px;z-index:1}div#\:\$p>svg>foreignObject>:where(section):not([root]){font-size:16pt;font-family:"Noto Sans JP",sans-serif}div#\:\$p>svg>foreignObject>:where(section):not([root]){--marpit-root-font-size:16pt}div#\:\$p>svg>foreignObject>section{position:relative;width:1440px;height:900px;text-align:left;color:hsl(17,57%,48%);background-color:white;align-content:center;margin:0;padding-top:150px;padding-bottom:125px;padding-left:100px;padding-right:100px}div#\:\$p>svg>foreignObject>section:after{all:unset;content:"Page " attr(data-marpit-pagination) " / " attr(data-marpit-pagination-total);display:block;position:absolute;bottom:20px;right:20px;color:hsl(174,42%,26%)}div#\:\$p>svg>foreignObject>section.image-h100 img{all:unset;display:block;height:100px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-w100 img{all:unset;display:block;width:100px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-h200 img{all:unset;display:block;height:200px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-w200 img{all:unset;display:block;width:200px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-h300 img{all:unset;display:block;height:300px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-w300 img{all:unset;display:block;width:300px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-h400 img{all:unset;display:block;height:400px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-w400 img{all:unset;display:block;width:400px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-h500 img{all:unset;display:block;height:500px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-w500 img{all:unset;display:block;width:500px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-h600 img{all:unset;display:block;height:600px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-w600 img{all:unset;display:block;width:600px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-h700 img{all:unset;display:block;height:700px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-w700 img{all:unset;display:block;width:700px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-h800 img{all:unset;display:block;height:800px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-w800 img{all:unset;display:block;width:800px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-h900 img{all:unset;display:block;height:900px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-w900 img{all:unset;display:block;width:900px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-h1000 img{all:unset;display:block;height:1000px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-w1000 img{all:unset;display:block;width:1000px;margin:0 auto}div#\:\$p>svg>foreignObject>section.img_only_h img{all:unset;display:block;height:625px;margin:0 auto;margin:0 auto}div#\:\$p>svg>foreignObject>section.img_only_w img{all:unset;display:block;width:1240px;margin:0 auto}div#\:\$p>svg>foreignObject>section.lg li,div#\:\$p>svg>foreignObject>section.lg p{font-size:calc(var(--marpit-root-font-size, 1rem) * 1.82)}div#\:\$p>svg>foreignObject>section.sm li,div#\:\$p>svg>foreignObject>section.sm p{font-size:calc(var(--marpit-root-font-size, 1rem) * 1.12)}div#\:\$p>svg>foreignObject>section.vsm li,div#\:\$p>svg>foreignObject>section.vsm p,div#\:\$p>svg>foreignObject>section.vsm table *{font-size:calc(var(--marpit-root-font-size, 1rem) * 0.91)}div#\:\$p>svg>foreignObject>section.vsm table div#\:\$p>svg>foreignObject>section section{--marpit-root-font-size:calc(var(--marpit-root-font-size, 1rem) * 0.91)}div#\:\$p>svg>foreignObject>section.cover{background-color:hsl(17,57%,48%);position:relative;align-content:center}div#\:\$p>svg>foreignObject>section.cover:after{color:hsl(79,71%,67%)}div#\:\$p>svg>foreignObject>section.cover:before{content:"";display:block;position:absolute;width:100%;height:100%;top:0;left:0;background-image:url("./images/ume_logo_mono_2.png");background-position-x:50%;background-position-y:30%;background-repeat:no-repeat;background-size:200%;mix-blend-mode:screen;mask-image:linear-gradient(to bottom right,white,transparent);opacity:0.5;-webkit-filter:none;filter:none}div#\:\$p>svg>foreignObject>section.cover :is(h1,marp-h1){color:white;font-size:calc(var(--marpit-root-font-size, 1rem) * 3.6);font-weight:800}div#\:\$p>svg>foreignObject>section.cover :is(h2,marp-h2){display:block;width:100%;font-size:calc(var(--marpit-root-font-size, 1rem) * 2.5);font-weight:500;background-image:unset;background-clip:unset;-webkit-text-fill-color:unset;text-align:center;margin:0.3em 0;color:hsl(79,71%,67%)}div#\:\$p>svg>foreignObject>section.cover :is(h2,marp-h2):after{all:unset}div#\:\$p>svg>foreignObject>section.cover :is(h3,marp-h3){color:#f6e7e1;text-align:center}div#\:\$p>svg>foreignObject>section.cover header{all:unset}div#\:\$p>svg>foreignObject>section.cover footer{color:hsl(79,71%,67%)}div#\:\$p>svg>foreignObject>section.overview{padding:0}div#\:\$p>svg>foreignObject>section.overview>div{display:flex;flex-flow:row wrap;height:100%}div#\:\$p>svg>foreignObject>section.overview>div>div{flex:1 1 0;padding:100px;padding-top:200px;padding-bottom:100px}div#\:\$p>svg>foreignObject>section.overview>div>div:first-child{background-color:hsl(17,57%,48%);color:white;padding-right:50px}div#\:\$p>svg>foreignObject>section.overview>div>div:nth-child(2){flex:2 1 0}div#\:\$p>svg>foreignObject>section.overview :is(h2,marp-h2){font-size:calc(var(--marpit-root-font-size, 1rem) * 3);color:#f6e7e1;background-image:unset;background-clip:unset;-webkit-text-fill-color:unset;padding:0;margin:0}div#\:\$p>svg>foreignObject>section.overview :is(h2,marp-h2):after{all:unset}div#\:\$p>svg>foreignObject>section.overview ul{display:flex;flex-flow:column wrap;height:100%;padding:0;margin:0;justify-content:center;gap:1em}div#\:\$p>svg>foreignObject>section.overview li{flex:0 0 auto;padding:0;margin:0;font-size:calc(var(--marpit-root-font-size, 1rem) * 2.5);font-weight:700;color:hsl(174,42%,26%)}div#\:\$p>svg>foreignObject>section.overview li::marker{color:hsl(79,71%,67%)}div#\:\$p>svg>foreignObject>section.overview.sm li{font-size:calc(var(--marpit-root-font-size, 1rem) * 1.5)}div#\:\$p>svg>foreignObject>section.overview>footer,div#\:\$p>svg>foreignObject>section.overview>header{color:#f6e7e1}div#\:\$p>svg>foreignObject>section.sub{padding:0}div#\:\$p>svg>foreignObject>section.sub>div{display:flex;flex-flow:column;height:100%}div#\:\$p>svg>foreignObject>section.sub>div>div:first-child{flex:0 0 0;background-color:hsl(17,57%,48%);color:white;padding:100px;padding-top:101px;padding-bottom:25px}div#\:\$p>svg>foreignObject>section.sub>div>div:nth-child(2){flex:1 1 0;padding:100px;padding-top:50px;padding-bottom:87.5px}div#\:\$p>svg>foreignObject>section.sub :is(h2,marp-h2){font-size:calc(var(--marpit-root-font-size, 1rem) * 3);color:#f6e7e1;background-image:unset;background-clip:unset;-webkit-text-fill-color:unset}div#\:\$p>svg>foreignObject>section.sub :is(h2,marp-h2):after{all:unset}div#\:\$p>svg>foreignObject>section.sub ul{padding:0;margin:0;display:flex;height:100%;flex-flow:column wrap;justify-content:center;gap:1em}div#\:\$p>svg>foreignObject>section.sub li{flex:0 0 auto;font-size:calc(var(--marpit-root-font-size, 1rem) * 2.5);font-weight:700;color:hsl(174,42%,26%);margin:0;padding:0}div#\:\$p>svg>foreignObject>section.sub li::marker{color:hsl(79,71%,67%)}div#\:\$p>svg>foreignObject>section.sub.sm li{font-size:calc(var(--marpit-root-font-size, 1rem) * 2)}div#\:\$p>svg>foreignObject>section.sub header{color:#f6e7e1}div#\:\$p>svg>foreignObject>section footer,div#\:\$p>svg>foreignObject>section header{width:100%;color:hsl(174,42%,26%);position:absolute;padding-left:100px;left:0;align-content:center}div#\:\$p>svg>foreignObject>section header{height:100px;background-color:hsl(17,57%,48%);color:#f6e7e1;font-size:calc(var(--marpit-root-font-size, 1rem) * 1.5);top:0}div#\:\$p>svg>foreignObject>section footer{height:75px;bottom:0}div#\:\$p>svg>foreignObject>section :is(h1,marp-h1){font-size:120px;text-align:center}div#\:\$p>svg>foreignObject>section :is(h2,marp-h2){display:inline-block;width:max-content;font-size:calc(var(--marpit-root-font-size, 1rem) * 2.5);font-weight:800;padding:0;margin:0}div#\:\$p>svg>foreignObject>section :is(h2,marp-h2):after{content:"";display:block;width:200%;max-width:700px;height:7px;margin-top:10px;margin-bottom:1em;background-color:#d99d86}div#\:\$p>svg>foreignObject>section :is(h3,marp-h3){font-size:calc(var(--marpit-root-font-size, 1rem) * 1.8);font-weight:700;color:#cd7d5d;margin:0;margin-bottom:0.8em;position:relative;left:calc(var(--marpit-root-font-size, 1rem) * 2.34)}div#\:\$p>svg>foreignObject>section :is(h3,marp-h3):before{content:"";display:block;position:absolute;top:0.3em;left:calc(0em - calc(var(--marpit-root-font-size, 1rem) * 2.34));width:calc(var(--marpit-root-font-size, 1rem) * 1.8);height:calc(var(--marpit-root-font-size, 1rem) * 1.8);background-color:hsl(79,71%,67%)}div#\:\$p>svg>foreignObject>section :is(h4,marp-h4){font-size:calc(var(--marpit-root-font-size, 1rem) * 1.44);font-weight:700;color:hsl(174,42%,26%);opacity:0.8;margin:0;margin-bottom:0.6em}div#\:\$p>svg>foreignObject>section p{font-size:calc(var(--marpit-root-font-size, 1rem) * 1.4);line-height:1.7em;margin:0;margin-bottom:1em;color:#cd7d5d}div#\:\$p>svg>foreignObject>section table{border:1px solid hsl(174,42%,26%);border-collapse:collapse}div#\:\$p>svg>foreignObject>section td,div#\:\$p>svg>foreignObject>section th{border:1px solid hsl(79,71%,67%);border-collapse:collapse;padding:0.4em}div#\:\$p>svg>foreignObject>section tr{color:#cd7d5d}div#\:\$p>svg>foreignObject>section tr:nth-child(2n) *{background-color:#f6e7e1;color:hsl(17,57%,48%)}div#\:\$p>svg>foreignObject>section th{background-color:hsl(79,71%,67%)}div#\:\$p>svg>foreignObject>section li{font-size:calc(var(--marpit-root-font-size, 1rem) * 1.4);opacity:0.8;margin:0.4em 0}div#\:\$p>svg>foreignObject>section li::marker{color:hsl(174,42%,26%)}div#\:\$p>svg>foreignObject>section a{color:hsl(174,42%,26%);text-decoration-thickness:3px;text-decoration-color:#517e7a}div#\:\$p>svg>foreignObject>section .center{text-align:center}div#\:\$p>svg>foreignObject>section div.columns-2{display:flex;flex-flow:row wrap;column-gap:2em}div#\:\$p>svg>foreignObject>section div.columns-2>div{flex:1 1 0}div#\:\$p>svg>foreignObject>section div.mail{border:2px solid #a8bfbd;border-radius:0.3em;box-shadow:10px 10px 20px #d4dfde;padding:25px}div#\:\$p>svg>foreignObject>section div.mail>div:first-of-type{border-top:1px solid hsl(79,71%,67%);border-bottom:1px solid hsl(79,71%,67%)}div#\:\$p>svg>foreignObject>section div.mail *{font-size:calc(var(--marpit-root-font-size, 1rem) * 0.98)}div#\:\$p>svg>foreignObject>section div.mail div#\:\$p>svg>foreignObject>section section{--marpit-root-font-size:calc(var(--marpit-root-font-size, 1rem) * 0.98)}div#\:\$p>svg>foreignObject>section blockquote{border-radius:1em;background-color:#f2ded7;padding:0.7em}div#\:\$p>svg>foreignObject>section blockquote p{margin:0;font-size:calc(var(--marpit-root-font-size, 1rem) * 1)}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]{columns:initial!important;display:block!important;padding:0!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]:after,div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]:before,div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=content]:after,div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=content]:before{display:none!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]{all:initial;display:flex;flex-direction:row;height:100%;overflow:hidden;width:100%}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container][data-marpit-advanced-background-direction=vertical]{flex-direction:column}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split]>div[data-marpit-advanced-background-container]{width:var(--marpit-advanced-background-split,50%)}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split=right]>div[data-marpit-advanced-background-container]{margin-left:calc(100% - var(--marpit-advanced-background-split, 50%))}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure{all:initial;background-position:center;background-repeat:no-repeat;background-size:cover;flex:auto;margin:0}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure>figcaption{position:absolute;border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;white-space:nowrap;width:1px}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=content],div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=pseudo]{background:transparent!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=pseudo],div#\:\$p>svg[data-marpit-svg]>foreignObject[data-marpit-advanced-background=pseudo]{pointer-events:none!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background-split]{width:100%;height:100%}</style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button><button data-bespoke-marp-osc="presenter" tabindex="-1" title="Open presenter view (p)">Open presenter view</button></div><div id=":$p"><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="1" data-paginate="skip" data-header="IS 対応マニュアル FS 引き継ぎ対応" data-footer="2024.12.23 Mon マーケティング部 小松" data-class="cover" data-theme="ume-orange" lang="ja-JP" class="cover" style="--paginate:skip;--header:IS 対応マニュアル FS 引き継ぎ対応;--footer:2024.12.23 Mon マーケティング部 小松;--class:cover;--theme:ume-orange;" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}">
-<header>IS 対応マニュアル FS 引き継ぎ対応</header>
+*/div#\:\$p>svg>foreignObject>section :is(h2,marp-h2),div#\:\$p>svg>foreignObject>section.impact :is(h1,marp-h1){background-image:linear-gradient(to bottom right,hsl(42,89%,62%),hsl(343,72%,36%) 100%);background-clip:text;-webkit-text-fill-color:transparent}div#\:\$p>svg>foreignObject>section:before{content:"";display:block;position:absolute;width:100px;height:100px;background-image:url("./images/ume_logo_mono_2.png");background-position:center;background-size:120%;mix-blend-mode:screen;top:0;right:20px;z-index:1}div#\:\$p>svg>foreignObject>:where(section):not([root]){font-size:16pt;font-family:"Noto Sans JP",sans-serif}div#\:\$p>svg>foreignObject>:where(section):not([root]){--marpit-root-font-size:16pt}div#\:\$p>svg>foreignObject>section{position:relative;width:1440px;height:900px;text-align:left;color:hsl(268,33%,35%);background-color:white;align-content:center;margin:0;padding-top:150px;padding-bottom:125px;padding-left:100px;padding-right:100px}div#\:\$p>svg>foreignObject>section:after{all:unset;content:"Page " attr(data-marpit-pagination) " / " attr(data-marpit-pagination-total);display:block;position:absolute;bottom:20px;right:20px;color:hsl(343,72%,36%)}div#\:\$p>svg>foreignObject>section.image-h100 img{all:unset;display:block;height:100px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-w100 img{all:unset;display:block;width:100px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-h200 img{all:unset;display:block;height:200px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-w200 img{all:unset;display:block;width:200px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-h300 img{all:unset;display:block;height:300px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-w300 img{all:unset;display:block;width:300px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-h400 img{all:unset;display:block;height:400px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-w400 img{all:unset;display:block;width:400px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-h500 img{all:unset;display:block;height:500px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-w500 img{all:unset;display:block;width:500px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-h600 img{all:unset;display:block;height:600px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-w600 img{all:unset;display:block;width:600px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-h700 img{all:unset;display:block;height:700px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-w700 img{all:unset;display:block;width:700px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-h800 img{all:unset;display:block;height:800px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-w800 img{all:unset;display:block;width:800px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-h900 img{all:unset;display:block;height:900px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-w900 img{all:unset;display:block;width:900px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-h1000 img{all:unset;display:block;height:1000px;margin:0 auto}div#\:\$p>svg>foreignObject>section.image-w1000 img{all:unset;display:block;width:1000px;margin:0 auto}div#\:\$p>svg>foreignObject>section.img_only_h img{all:unset;display:block;height:625px;margin:0 auto;margin:0 auto}div#\:\$p>svg>foreignObject>section.img_only_w img{all:unset;display:block;width:1240px;margin:0 auto}div#\:\$p>svg>foreignObject>section.lg li,div#\:\$p>svg>foreignObject>section.lg p{font-size:calc(var(--marpit-root-font-size, 1rem) * 1.82)}div#\:\$p>svg>foreignObject>section.sm li,div#\:\$p>svg>foreignObject>section.sm p{font-size:calc(var(--marpit-root-font-size, 1rem) * 1.12)}div#\:\$p>svg>foreignObject>section.vsm li,div#\:\$p>svg>foreignObject>section.vsm p,div#\:\$p>svg>foreignObject>section.vsm table *{font-size:calc(var(--marpit-root-font-size, 1rem) * 0.91)}div#\:\$p>svg>foreignObject>section.vsm table div#\:\$p>svg>foreignObject>section section{--marpit-root-font-size:calc(var(--marpit-root-font-size, 1rem) * 0.91)}div#\:\$p>svg>foreignObject>section.cover{background-color:hsl(268,33%,35%);position:relative;align-content:center}div#\:\$p>svg>foreignObject>section.cover:after{color:hsl(42,89%,62%)}div#\:\$p>svg>foreignObject>section.cover:before{content:"";display:block;position:absolute;width:100%;height:100%;top:0;left:0;background-image:url("./images/ume_logo_mono_2.png");background-position-x:50%;background-position-y:30%;background-repeat:no-repeat;background-size:200%;mix-blend-mode:screen;mask-image:linear-gradient(to bottom right,white,transparent);opacity:0.5;-webkit-filter:none;filter:none}div#\:\$p>svg>foreignObject>section.cover :is(h1,marp-h1){color:white;font-size:calc(var(--marpit-root-font-size, 1rem) * 3.6);font-weight:800}div#\:\$p>svg>foreignObject>section.cover :is(h2,marp-h2){display:block;width:100%;font-size:calc(var(--marpit-root-font-size, 1rem) * 2.5);font-weight:500;background-image:unset;background-clip:unset;-webkit-text-fill-color:unset;text-align:center;margin:0.3em 0;color:hsl(42,89%,62%)}div#\:\$p>svg>foreignObject>section.cover :is(h2,marp-h2):after{all:unset}div#\:\$p>svg>foreignObject>section.cover :is(h3,marp-h3){color:#e6e2eb;text-align:center}div#\:\$p>svg>foreignObject>section.cover header{all:unset}div#\:\$p>svg>foreignObject>section.cover footer{color:hsl(42,89%,62%)}div#\:\$p>svg>foreignObject>section.overview{padding:0}div#\:\$p>svg>foreignObject>section.overview>div{display:flex;flex-flow:row wrap;height:100%}div#\:\$p>svg>foreignObject>section.overview>div>div{flex:1 1 0;padding:100px;padding-top:200px;padding-bottom:100px}div#\:\$p>svg>foreignObject>section.overview>div>div:first-child{background-color:hsl(268,33%,35%);color:white;padding-right:50px}div#\:\$p>svg>foreignObject>section.overview>div>div:nth-child(2){flex:2 1 0}div#\:\$p>svg>foreignObject>section.overview :is(h2,marp-h2){font-size:calc(var(--marpit-root-font-size, 1rem) * 3);color:#e6e2eb;background-image:unset;background-clip:unset;-webkit-text-fill-color:unset;padding:0;margin:0}div#\:\$p>svg>foreignObject>section.overview :is(h2,marp-h2):after{all:unset}div#\:\$p>svg>foreignObject>section.overview ul{display:flex;flex-flow:column wrap;height:100%;padding:0;margin:0;justify-content:center;gap:1em}div#\:\$p>svg>foreignObject>section.overview li{flex:0 0 auto;padding:0;margin:0;font-size:calc(var(--marpit-root-font-size, 1rem) * 2.5);font-weight:700;color:hsl(343,72%,36%)}div#\:\$p>svg>foreignObject>section.overview li::marker{color:hsl(42,89%,62%)}div#\:\$p>svg>foreignObject>section.overview.sm li{font-size:calc(var(--marpit-root-font-size, 1rem) * 1.5)}div#\:\$p>svg>foreignObject>section.overview>footer,div#\:\$p>svg>foreignObject>section.overview>header{color:#e6e2eb}div#\:\$p>svg>foreignObject>section.sub{padding:0}div#\:\$p>svg>foreignObject>section.sub>div{display:flex;flex-flow:column;height:100%}div#\:\$p>svg>foreignObject>section.sub>div>div:first-child{flex:0 0 0;background-color:hsl(268,33%,35%);color:white;padding:100px;padding-top:101px;padding-bottom:25px}div#\:\$p>svg>foreignObject>section.sub>div>div:nth-child(2){flex:1 1 0;padding:100px;padding-top:50px;padding-bottom:87.5px}div#\:\$p>svg>foreignObject>section.sub :is(h2,marp-h2){font-size:calc(var(--marpit-root-font-size, 1rem) * 3);color:#e6e2eb;background-image:unset;background-clip:unset;-webkit-text-fill-color:unset}div#\:\$p>svg>foreignObject>section.sub :is(h2,marp-h2):after{all:unset}div#\:\$p>svg>foreignObject>section.sub ul{padding:0;margin:0;display:flex;height:100%;flex-flow:column wrap;justify-content:center;gap:1em}div#\:\$p>svg>foreignObject>section.sub li{flex:0 0 auto;font-size:calc(var(--marpit-root-font-size, 1rem) * 2.5);font-weight:700;color:hsl(343,72%,36%);margin:0;padding:0}div#\:\$p>svg>foreignObject>section.sub li::marker{color:hsl(42,89%,62%)}div#\:\$p>svg>foreignObject>section.sub.sm li{font-size:calc(var(--marpit-root-font-size, 1rem) * 2)}div#\:\$p>svg>foreignObject>section.sub header{color:#e6e2eb}div#\:\$p>svg>foreignObject>section footer,div#\:\$p>svg>foreignObject>section header{width:100%;color:hsl(343,72%,36%);position:absolute;padding-left:100px;left:0;align-content:center}div#\:\$p>svg>foreignObject>section header{height:100px;background-color:hsl(268,33%,35%);color:#e6e2eb;font-size:calc(var(--marpit-root-font-size, 1rem) * 1.5);top:0}div#\:\$p>svg>foreignObject>section footer{height:75px;bottom:0}div#\:\$p>svg>foreignObject>section :is(h1,marp-h1){font-size:120px;text-align:center}div#\:\$p>svg>foreignObject>section :is(h2,marp-h2){display:inline-block;width:max-content;font-size:calc(var(--marpit-root-font-size, 1rem) * 2.5);font-weight:800;padding:0;margin:0}div#\:\$p>svg>foreignObject>section :is(h2,marp-h2):after{content:"";display:block;width:200%;max-width:700px;height:7px;margin-top:10px;margin-bottom:1em;background-color:#9a8aad}div#\:\$p>svg>foreignObject>section :is(h3,marp-h3){font-size:calc(var(--marpit-root-font-size, 1rem) * 1.8);font-weight:700;color:#796392;margin:0;margin-bottom:0.8em;position:relative;left:calc(var(--marpit-root-font-size, 1rem) * 2.34)}div#\:\$p>svg>foreignObject>section :is(h3,marp-h3):before{content:"";display:block;position:absolute;top:0.3em;left:calc(0em - calc(var(--marpit-root-font-size, 1rem) * 2.34));width:calc(var(--marpit-root-font-size, 1rem) * 1.8);height:calc(var(--marpit-root-font-size, 1rem) * 1.8);background-color:hsl(42,89%,62%)}div#\:\$p>svg>foreignObject>section :is(h4,marp-h4){font-size:calc(var(--marpit-root-font-size, 1rem) * 1.44);font-weight:700;color:hsl(343,72%,36%);opacity:0.8;margin:0;margin-bottom:0.6em}div#\:\$p>svg>foreignObject>section p{font-size:calc(var(--marpit-root-font-size, 1rem) * 1.4);line-height:1.7em;margin:0;margin-bottom:1em;color:#796392}div#\:\$p>svg>foreignObject>section table{border:1px solid hsl(343,72%,36%);border-collapse:collapse}div#\:\$p>svg>foreignObject>section td,div#\:\$p>svg>foreignObject>section th{border:1px solid hsl(42,89%,62%);border-collapse:collapse;padding:0.4em}div#\:\$p>svg>foreignObject>section tr{color:#796392}div#\:\$p>svg>foreignObject>section tr:nth-child(2n) *{background-color:#e6e2eb;color:hsl(268,33%,35%)}div#\:\$p>svg>foreignObject>section th{background-color:hsl(42,89%,62%)}div#\:\$p>svg>foreignObject>section li{font-size:calc(var(--marpit-root-font-size, 1rem) * 1.4);opacity:0.8;margin:0.4em 0}div#\:\$p>svg>foreignObject>section li::marker{color:hsl(343,72%,36%)}div#\:\$p>svg>foreignObject>section a{color:hsl(343,72%,36%);text-decoration-thickness:3px;text-decoration-color:#b14865}div#\:\$p>svg>foreignObject>section .center{text-align:center}div#\:\$p>svg>foreignObject>section div.columns-2{display:flex;flex-flow:row wrap;column-gap:2em}div#\:\$p>svg>foreignObject>section div.columns-2>div{flex:1 1 0}div#\:\$p>svg>foreignObject>section div.mail{border:2px solid #d8a3b2;border-radius:0.3em;box-shadow:10px 10px 20px #ecd1d9;padding:25px}div#\:\$p>svg>foreignObject>section div.mail>div:first-of-type{border-top:1px solid hsl(42,89%,62%);border-bottom:1px solid hsl(42,89%,62%)}div#\:\$p>svg>foreignObject>section div.mail *{font-size:calc(var(--marpit-root-font-size, 1rem) * 0.98)}div#\:\$p>svg>foreignObject>section div.mail div#\:\$p>svg>foreignObject>section section{--marpit-root-font-size:calc(var(--marpit-root-font-size, 1rem) * 0.98)}div#\:\$p>svg>foreignObject>section blockquote{border-radius:1em;background-color:#ddd8e4;padding:0.7em}div#\:\$p>svg>foreignObject>section blockquote p{margin:0;font-size:calc(var(--marpit-root-font-size, 1rem) * 1)}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]{columns:initial!important;display:block!important;padding:0!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]:after,div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]:before,div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=content]:after,div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=content]:before{display:none!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]{all:initial;display:flex;flex-direction:row;height:100%;overflow:hidden;width:100%}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container][data-marpit-advanced-background-direction=vertical]{flex-direction:column}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split]>div[data-marpit-advanced-background-container]{width:var(--marpit-advanced-background-split,50%)}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split=right]>div[data-marpit-advanced-background-container]{margin-left:calc(100% - var(--marpit-advanced-background-split, 50%))}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure{all:initial;background-position:center;background-repeat:no-repeat;background-size:cover;flex:auto;margin:0}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure>figcaption{position:absolute;border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;white-space:nowrap;width:1px}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=content],div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=pseudo]{background:transparent!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=pseudo],div#\:\$p>svg[data-marpit-svg]>foreignObject[data-marpit-advanced-background=pseudo]{pointer-events:none!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background-split]{width:100%;height:100%}</style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button><button data-bespoke-marp-osc="presenter" tabindex="-1" title="Open presenter view (p)">Open presenter view</button></div><div id=":$p"><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="1" data-paginate="skip" data-header="支払い・経費処理方法" data-footer="2024.9.5 Thu マーケティング部 栗原" data-class="cover" data-theme="ume-purple" lang="ja-JP" class="cover" style="--paginate:skip;--header:支払い・経費処理方法;--footer:2024.9.5 Thu マーケティング部 栗原;--class:cover;--theme:ume-purple;" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}">
+<header>支払い・経費処理方法</header>
 
-<h1 id="is-%E5%AF%BE%E5%BF%9C%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB">IS 対応マニュアル</h1>
-<h2 id="fs-%E5%BC%95%E3%81%8D%E7%B6%99%E3%81%8E%E5%AF%BE%E5%BF%9C%E3%81%AE%E6%96%B9%E6%B3%95">FS 引き継ぎ対応の方法</h2>
-<footer>2024.12.23 Mon マーケティング部 小松</footer>
+<h1 id="%E6%94%AF%E6%89%95%E3%81%84%E3%83%BB%E7%B5%8C%E8%B2%BB%E5%87%A6%E7%90%86%E6%96%B9%E6%B3%95">支払い・経費処理方法</h1>
+<footer>2024.9.5 Thu マーケティング部 栗原</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="2" data-paginate="true" data-header="IS 対応マニュアル FS 引き継ぎ対応" data-footer="2024.12.23 Mon マーケティング部 小松" data-class="overview" data-theme="ume-orange" lang="ja-JP" class="overview" data-marpit-pagination="1" style="--paginate:true;--header:IS 対応マニュアル FS 引き継ぎ対応;--footer:2024.12.23 Mon マーケティング部 小松;--class:overview;--theme:ume-orange;" data-marpit-pagination-total="17" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}">
-<header>IS 対応マニュアル FS 引き継ぎ対応</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="2" data-paginate="true" data-header="支払い・経費処理方法" data-footer="2024.9.5 Thu マーケティング部 栗原" data-class="overview sm" data-theme="ume-purple" lang="ja-JP" class="overview sm" data-marpit-pagination="1" style="--paginate:true;--header:支払い・経費処理方法;--footer:2024.9.5 Thu マーケティング部 栗原;--class:overview sm;--theme:ume-purple;" data-marpit-pagination-total="14" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}">
+<header>支払い・経費処理方法</header>
 <div>
 <div>
-<h2 id="%E7%9B%AE%E6%AC%A1">目次</h2>
+<h2 id="%E3%83%95%E3%83%AD%E3%83%BC">フロー</h2>
 </div>
 <div>
 <ul>
-<li><a href="#timing">引継ぎタイミング</a></li>
-<li><a href="#quote">見積希望の場合</a></li>
-<li><a href="#meeting">打ち合わせ希望の場合</a></li>
-<li><a href="#other">その他の場合</a></li>
+<li><a href="#preapplication">事前申請を確認する</a></li>
+<li><a href="#invoice">請求書 (インボイス) を取得する</a></li>
+<li><a href="#add-entry">一覧表にエントリーを追加する</a></li>
+<li><a href="#jobcan">ジョブカンで支払い依頼申請を行う</a></li>
+<li><a href="#ask">出社メンバーに紙処理を依頼する</a></li>
+<li><a href="#paperwork">出社メンバーが出社時に紙を処理する</a></li>
 </ul>
 </div>
 </div>
-<footer>2024.12.23 Mon マーケティング部 小松</footer>
+<footer>2024.9.5 Thu マーケティング部 栗原</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="3" data-paginate="true" data-header="IS 対応マニュアル FS 引き継ぎ対応" data-footer="2024.12.23 Mon マーケティング部 小松" data-theme="ume-orange" lang="ja-JP" data-marpit-pagination="2" style="--paginate:true;--header:IS 対応マニュアル FS 引き継ぎ対応;--footer:2024.12.23 Mon マーケティング部 小松;--theme:ume-orange;" data-marpit-pagination-total="17" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}">
-<header>IS 対応マニュアル FS 引き継ぎ対応</header>
-<span id="timing">
-<h2 id="fs%E5%BC%95%E7%B6%99%E3%81%8E%E3%82%BF%E3%82%A4%E3%83%9F%E3%83%B3%E3%82%B0">FS引継ぎタイミング</h2>
-<p>FS引継ぎタイミング＝IS対応が終了するタイミング。</p>
-<p>ISとFS兼任の場合、FSとしての対応がスタートするタイミングでもある。</p>
-<ul>
-<li>見積希望</li>
-<li>打ち合わせ希望</li>
-<li>システム連携希望：<strong>民泊INN / ホテルスマート / エアホストの場合のみ</strong>即前田Mgrへ引継ぎ。契約内容が煩雑のため。</li>
-<li>価格交渉</li>
-</ul>
-<footer>2024.12.23 Mon マーケティング部 小松</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="4" data-paginate="true" data-header="IS 対応マニュアル FS 引き継ぎ対応" data-footer="2024.12.23 Mon マーケティング部 小松" data-theme="ume-orange" lang="ja-JP" data-marpit-pagination="3" style="--paginate:true;--header:IS 対応マニュアル FS 引き継ぎ対応;--footer:2024.12.23 Mon マーケティング部 小松;--theme:ume-orange;" data-marpit-pagination-total="17" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}">
-<header>IS 対応マニュアル FS 引き継ぎ対応</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="3" data-paginate="true" data-header="支払い・経費処理方法" data-footer="2024.9.5 Thu マーケティング部 栗原" data-theme="ume-purple" lang="ja-JP" data-marpit-pagination="2" style="--paginate:true;--header:支払い・経費処理方法;--footer:2024.9.5 Thu マーケティング部 栗原;--theme:ume-purple;" data-marpit-pagination-total="14" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}">
+<header>支払い・経費処理方法</header>
 
-<p><span id=quote></span></p>
-<h2 id="%E8%A6%8B%E7%A9%8D%E5%B8%8C%E6%9C%9B%E3%81%AE%E5%A0%B4%E5%90%88">見積希望の場合</h2>
-<h3 id="%E5%AF%BE%E5%BF%9C%E3%81%AE%E6%B5%81%E3%82%8C">対応の流れ</h3>
-<ol>
-<li>プロパティ更新 - 問い合わせ内容詳細</li>
-<li>取引レコード作成</li>
-<li>プロパティ更新 - この取引の概要</li>
-<li>タスク作成</li>
-<li>関連付けの確認・操作</li>
-<li>Trello更新</li>
-</ol>
-<footer>2024.12.23 Mon マーケティング部 小松</footer>
+<p><span id="preapplication"></span></p>
+<h2 id="%E4%BA%8B%E5%89%8D%E7%94%B3%E8%AB%8B%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B">事前申請を確認する</h2>
+<p>30,000 円以上の物品・サービスの購買には購買稟議が必要。<br />
+事前に申請を通しておく。</p>
+<p>上記金額未満の決済の場合は、購買稟議は必要ないが常務から口頭 (メールだとエビデンスが残るので望ましい) 承認が必要。</p>
+<footer>2024.9.5 Thu マーケティング部 栗原</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="5" data-paginate="true" data-header="IS 対応マニュアル FS 引き継ぎ対応 &gt; 見積希望の場合" data-footer="2024.12.23 Mon マーケティング部 小松" data-theme="ume-orange" lang="ja-JP" data-marpit-pagination="4" style="--paginate:true;--header:IS 対応マニュアル FS 引き継ぎ対応 &gt; 見積希望の場合;--footer:2024.12.23 Mon マーケティング部 小松;--theme:ume-orange;" data-marpit-pagination-total="17" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}">
-<header>IS 対応マニュアル FS 引き継ぎ対応 &gt; 見積希望の場合</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="4" data-paginate="true" data-header="支払い・経費処理方法" data-footer="2024.9.5 Thu マーケティング部 栗原" data-theme="ume-purple" lang="ja-JP" data-marpit-pagination="3" style="--paginate:true;--header:支払い・経費処理方法;--footer:2024.9.5 Thu マーケティング部 栗原;--theme:ume-purple;" data-marpit-pagination-total="14" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}">
+<header>支払い・経費処理方法</header>
 
-<h3 id="1%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3%E6%9B%B4%E6%96%B0---%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E5%86%85%E5%AE%B9%E8%A9%B3%E7%B4%B0">1.プロパティ更新 - 問い合わせ内容詳細</h3>
-<p>コンタクトレコードの下記プロパティを更新する。</p>
-<ul>
-<li>問い合わせ内容分類（WF）の「見積もり」選択。</li>
-<li>問い合わせパターン（WF）の「H - 引き継ぎのみ」選択。</li>
-</ul>
-<p>すると自動でタスクが作成されることを確認。<br />
-タスクの説明欄通りに作業を進める。</p>
-<footer>2024.12.23 Mon マーケティング部 小松</footer>
+<p><span id="invoice"></span></p>
+<h2 id="%E8%AB%8B%E6%B1%82%E6%9B%B8-%E3%82%A4%E3%83%B3%E3%83%9C%E3%82%A4%E3%82%B9-%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B">請求書 (インボイス) を取得する</h2>
+<p>支払い処理には請求書が必要。<br />
+請求書が取得できない場合には、領収書や見積もり、決済画面のスクショなどそれに代替する書面が必要。</p>
+<p>経費精算の場合には領収書や、カード明細のスクショなどが必要。</p>
+<footer>2024.9.5 Thu マーケティング部 栗原</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="6" data-paginate="true" data-header="IS 対応マニュアル FS 引き継ぎ対応 &gt; 見積希望の場合" data-footer="2024.12.23 Mon マーケティング部 小松" data-theme="ume-orange" lang="ja-JP" data-marpit-pagination="5" style="--paginate:true;--header:IS 対応マニュアル FS 引き継ぎ対応 &gt; 見積希望の場合;--footer:2024.12.23 Mon マーケティング部 小松;--theme:ume-orange;" data-marpit-pagination-total="17" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}">
-<header>IS 対応マニュアル FS 引き継ぎ対応 &gt; 見積希望の場合</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="5" data-paginate="true" data-header="支払い・経費処理方法" data-footer="2024.9.5 Thu マーケティング部 栗原" data-theme="ume-purple" lang="ja-JP" data-marpit-pagination="4" style="--paginate:true;--header:支払い・経費処理方法;--footer:2024.9.5 Thu マーケティング部 栗原;--theme:ume-purple;" data-marpit-pagination-total="14" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}">
+<header>支払い・経費処理方法</header>
 
-<h3 id="2%E5%8F%96%E5%BC%95%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E4%BD%9C%E6%88%90">2.取引レコード作成</h3>
-<p>コンタクトレコード表示画面の右側にある”取引（0件）”の右側「＋追加」クリック。</p>
-<p>「取引を作成」画面が表示されるので、「取引名」を「会社名 姓さま LINKEY Plus (単体 or/and 遠隔)プラン 〇台 施工手配(あり or なし or 不明)」と入力。</p>
-<blockquote>
-<p>(ex.株式会社ユーエムイー 小松さま LINKEY Plus 遠隔プラン 1台 施工手配不明)</p>
-</blockquote>
-<p>プラン名と台数と施工手配有無がわかるように記載する。</p>
-<footer>2024.12.23 Mon マーケティング部 小松</footer>
+<p><span id="add-entry"></span></p>
+<h2 id="%E4%B8%80%E8%A6%A7%E8%A1%A8%E3%81%AB%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B">一覧表にエントリーを追加する</h2>
+<p><a href="https://docs.google.com/spreadsheets/d/1Upwqv6sDMJxUlTNsGVZ_b8M2hXl9cNRh3IjCmAJFjig/edit?usp=sharing">マーケティング部費用一覧表</a></p>
+<p>1 案件 = 1 行 (エントリー) で記載する。<br />
+定期的に発生する支払いや経費は、先々の分まであらかじめエントリーを記載しておいても良い。<br />
+一覧表のヘッダー列にも項目の説明があるが簡素なため、以下に詳細を説明する。</p>
+<footer>2024.9.5 Thu マーケティング部 栗原</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="7" data-paginate="true" data-header="IS 対応マニュアル FS 引き継ぎ対応 &gt; 見積希望の場合" data-footer="2024.12.23 Mon マーケティング部 小松" data-theme="ume-orange" lang="ja-JP" data-marpit-pagination="6" style="--paginate:true;--header:IS 対応マニュアル FS 引き継ぎ対応 &gt; 見積希望の場合;--footer:2024.12.23 Mon マーケティング部 小松;--theme:ume-orange;" data-marpit-pagination-total="17" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}">
-<header>IS 対応マニュアル FS 引き継ぎ対応 &gt; 見積希望の場合</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="6" data-paginate="true" data-header="支払い・経費処理方法" data-footer="2024.9.5 Thu マーケティング部 栗原" data-class="sm" data-theme="ume-purple" lang="ja-JP" class="sm" data-marpit-pagination="5" style="--paginate:true;--header:支払い・経費処理方法;--footer:2024.9.5 Thu マーケティング部 栗原;--class:sm;--theme:ume-purple;" data-marpit-pagination-total="14" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}">
+<header>支払い・経費処理方法</header>
 
-<h3 id="3%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3%E6%9B%B4%E6%96%B0---%E3%81%93%E3%81%AE%E5%8F%96%E5%BC%95%E3%81%AE%E6%A6%82%E8%A6%81">3.プロパティ更新 - この取引の概要</h3>
-<p>取引レコードの下記セクション内のプロパティを更新する。</p>
-<ul>
-<li>この取引の概要</li>
-</ul>
-<p>各セクション・プロパティの入力ルールは<a href="https://docs.google.com/document/d/1r7fNILlrSG4xram_D-H_yWUVuaJSOS5fATU5Q5cnhMk/edit?usp=sharing">こちら</a></p>
-<footer>2024.12.23 Mon マーケティング部 小松</footer>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>発生年月日</td>
+<td>支払い・経費が発生した年月日。<br />定期的に発生するコストで月次の場合、その月の 1 日を指定しておく。<br />(例: サービス 2024.8 月利用分 であれば 2024.08.01 など)</td>
+</tr>
+<tr>
+<td>名目</td>
+<td>コストのタイトル。ジョブカンの申請タイトルと同じで良い。</td>
+</tr>
+<tr>
+<td>説明</td>
+<td>コストの内容が分かる短文を記載。ジョブカンに記載するものよりも簡潔で良い。</td>
+</tr>
+<tr>
+<td>商材・事業</td>
+<td>ドロップダウンから関連する商材・事業を選択。</td>
+</tr>
+<tr>
+<td>コスト種類</td>
+<td>ドロップダウンからコストの種類を選択する。</td>
+</tr>
+<tr>
+<td>金額</td>
+<td>税込みの日本円金額を記入。数字を入れればフォーマットが自動でされるため、円マークやコンマは不要。</td>
+</tr>
+<tr>
+<td>費用スコープ</td>
+<td>ショット、年次、月次から 1 つを選択。</td>
+</tr>
+<tr>
+<td>発生 or 予定</td>
+<td>すでに発生していれば &quot;発生&quot;、今後の予定であれば &quot;予定&quot;</td>
+</tr>
+<tr>
+<td>処理ステータス</td>
+<td><b>いろいろあるが、現在は &quot;未処理&quot;, &quot;紙処理前&quot;, &quot;完了&quot; の 3 つしか使っていない。</b><br /><br />予定の状態であれば &quot;未処理&quot;<br />ジョブカンで申請した状態で紙をまだ処理していなければ &quot;紙処理前&quot;<br />出社メンバーが紙処理を完了したら、そのメンバーが &quot;完了&quot; に変更する。</td>
+</tr>
+</tbody>
+</table>
+<footer>2024.9.5 Thu マーケティング部 栗原</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="8" data-paginate="true" data-header="IS 対応マニュアル FS 引き継ぎ対応 &gt; 見積希望の場合" data-footer="2024.12.23 Mon マーケティング部 小松" data-theme="ume-orange" lang="ja-JP" data-marpit-pagination="7" style="--paginate:true;--header:IS 対応マニュアル FS 引き継ぎ対応 &gt; 見積希望の場合;--footer:2024.12.23 Mon マーケティング部 小松;--theme:ume-orange;" data-marpit-pagination-total="17" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}">
-<header>IS 対応マニュアル FS 引き継ぎ対応 &gt; 見積希望の場合</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="7" data-paginate="true" data-header="支払い・経費処理方法" data-footer="2024.9.5 Thu マーケティング部 栗原" data-class="sm" data-theme="ume-purple" lang="ja-JP" class="sm" data-marpit-pagination="6" style="--paginate:true;--header:支払い・経費処理方法;--footer:2024.9.5 Thu マーケティング部 栗原;--class:sm;--theme:ume-purple;" data-marpit-pagination-total="14" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}">
+<header>支払い・経費処理方法</header>
 
-<h3 id="4%E3%82%BF%E3%82%B9%E3%82%AF%E4%BD%9C%E6%88%90">4.タスク作成</h3>
-<p>「見積作成依頼 to 営業事務」タスクを作成する。</p>
-<p>自動化WFにて生成された”営業対応依頼_見積もり”タスクの説明欄通りにタスク処理。</p>
-<h4 id="%E5%96%B6%E6%A5%AD%E5%AF%BE%E5%BF%9C%E4%BE%9D%E9%A0%BC_%E8%A6%8B%E7%A9%8D%E3%82%82%E3%82%8A%E3%82%BF%E3%82%B9%E3%82%AF%E3%81%AE%E8%AA%AC%E6%98%8E%E6%AC%84">営業対応依頼_見積もりタスクの説明欄</h4>
-<p>[x] 取引レコードを作成<br />
-[x] 見積もり作成依頼 to 営業事務 を作成<br />
-[x] レコード担当者を営業に変更<br />
-[x] 依頼</p>
-<footer>2024.12.23 Mon マーケティング部 小松</footer>
+<h3 id="%E7%B6%9A%E3%81%8D">続き</h3>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>支払い方法</td>
+<td>選択肢から 1 つを選択。</td>
+</tr>
+<tr>
+<td>精算年月日</td>
+<td>クレジット支払いなら支払いを行った日、振込・口座引き落としなら支払い期限。<br /><br />UME からの支払いは、毎月 10 日、20 日、月末日のいずれかになる。<br />そのうちから、支払い依頼をした日の最短の支払い日を指定する。<br />支払い日が土日祝の場合は、その直前の営業日を指定する。</td>
+</tr>
+<tr>
+<td>支払い先</td>
+<td>支払い先正式名称を記載する。</td>
+</tr>
+<tr>
+<td>備考・メモ</td>
+<td>紙処理を出社メンバーに依頼した場合、依頼先と依頼日を書いておく。</td>
+</tr>
+<tr>
+<td>成果物・納品物</td>
+<td>現在使ってないので未記入で OK。</td>
+</tr>
+<tr>
+<td>ジョブカンURL</td>
+<td>ジョブカンの支払い申請や経費申請、稟議があれば稟議申請のページへのリンクを差し込んでおく。<br />繰り返し発生するコストの場合は、直前行の申請ページのリンクに行って申請をコピーする、ということが可能でラクなため。<br /><br /><b>支払い申請なのか、経費申請なのかはここで判別するので、リンクテキストは必ず &quot;支払い&quot; or &quot;経費&quot; が分かるように。</td>
+</tr>
+</tbody>
+</table>
+<footer>2024.9.5 Thu マーケティング部 栗原</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="9" data-paginate="true" data-header="IS 対応マニュアル FS 引き継ぎ対応 &gt; 見積希望の場合" data-footer="2024.12.23 Mon マーケティング部 小松" data-theme="ume-orange" lang="ja-JP" data-marpit-pagination="8" style="--paginate:true;--header:IS 対応マニュアル FS 引き継ぎ対応 &gt; 見積希望の場合;--footer:2024.12.23 Mon マーケティング部 小松;--theme:ume-orange;" data-marpit-pagination-total="17" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}">
-<header>IS 対応マニュアル FS 引き継ぎ対応 &gt; 見積希望の場合</header>
-<div class="mail" style="margin-bottom: 1rem">
-<strong>補足 1</strong>
-<p>作成したタスクの説明欄にお客様へお送りしているメールの見積もり内容をそのままコピペ<br /><br />
-（【見積もり内容】◾︎プラン・台数...）</p>
-</div>
-<div class="mail">
-<strong>補足 2</strong>
-<p>スニペットを用いて引継ぎコメント追加。<br />
-各営業担当者と井出常務、栗原Ld、小松にそれぞれメンション。<br /></p>
-<p>（例）@前田 聖也<br />
-お疲れ様です。小松です。<br />
-見積のご依頼をいただきました。<br />
-引継ぎますのでご対応よろしくお願いいたします。<br />
-@井出 俊樹 @栗原 大輔<br />
-お疲れ様です。小松です。<br />
-見積ご希望につき営業案件としております。</p>
-</div>
-<footer>2024.12.23 Mon マーケティング部 小松</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="10" data-paginate="true" data-header="IS 対応マニュアル FS 引き継ぎ対応 &gt; 見積希望の場合" data-footer="2024.12.23 Mon マーケティング部 小松" data-theme="ume-orange" lang="ja-JP" data-marpit-pagination="9" style="--paginate:true;--header:IS 対応マニュアル FS 引き継ぎ対応 &gt; 見積希望の場合;--footer:2024.12.23 Mon マーケティング部 小松;--theme:ume-orange;" data-marpit-pagination-total="17" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}">
-<header>IS 対応マニュアル FS 引き継ぎ対応 &gt; 見積希望の場合</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="8" data-paginate="true" data-header="支払い・経費処理方法" data-footer="2024.9.5 Thu マーケティング部 栗原" data-theme="ume-purple" lang="ja-JP" data-marpit-pagination="7" style="--paginate:true;--header:支払い・経費処理方法;--footer:2024.9.5 Thu マーケティング部 栗原;--theme:ume-purple;" data-marpit-pagination-total="14" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}">
+<header>支払い・経費処理方法</header>
 
-<h3 id="5%E9%96%A2%E9%80%A3%E4%BB%98%E3%81%91%E3%81%AE%E7%A2%BA%E8%AA%8D%E3%83%BB%E6%93%8D%E4%BD%9C">5.関連付けの確認・操作</h3>
-<p>コンタクトレコード～会社レコード～取引レコードの3レコードがそれぞれ正常に関連付けされているか確認する。<br />
-取引レコードのページにて会社レコードが関連付けされていないことが多いため、要チェック。</p>
-<p>取引レコードで作成したタスクの関連付けが正常にされているか確認する。関連付けされていないコンタクト・会社・取引 があれば関連付けを行う。</p>
-<footer>2024.12.23 Mon マーケティング部 小松</footer>
+<p><span id="jobcan"></span></p>
+<h2 id="%E3%82%B8%E3%83%A7%E3%83%96%E3%82%AB%E3%83%B3%E3%81%A7%E6%94%AF%E6%89%95%E3%81%84%E4%BE%9D%E9%A0%BC%E7%94%B3%E8%AB%8B%E3%82%92%E8%A1%8C%E3%81%86">ジョブカンで支払い依頼申請を行う</h2>
+<p>ジョブカンで支払い申請 or 経費申請を行う。</p>
+<h3 id="%E6%94%AF%E6%89%95%E4%BE%9D%E9%A0%BC%E7%94%B3%E8%AB%8B">支払依頼申請</h3>
+<p>ジョブカンの &quot;支払依頼申請書&quot; を作成して提出する。</p>
+<footer>2024.9.5 Thu マーケティング部 栗原</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="11" data-paginate="true" data-header="IS 対応マニュアル FS 引き継ぎ対応 &gt; 打ち合わせ希望の場合" data-footer="2024.12.23 Mon マーケティング部 小松" data-theme="ume-orange" lang="ja-JP" data-marpit-pagination="10" style="--paginate:true;--header:IS 対応マニュアル FS 引き継ぎ対応 &gt; 打ち合わせ希望の場合;--footer:2024.12.23 Mon マーケティング部 小松;--theme:ume-orange;" data-marpit-pagination-total="17" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}">
-<header>IS 対応マニュアル FS 引き継ぎ対応 &gt; 打ち合わせ希望の場合</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="9" data-paginate="true" data-header="支払い・経費処理方法" data-footer="2024.9.5 Thu マーケティング部 栗原" data-theme="ume-purple" lang="ja-JP" data-marpit-pagination="8" style="--paginate:true;--header:支払い・経費処理方法;--footer:2024.9.5 Thu マーケティング部 栗原;--theme:ume-purple;" data-marpit-pagination-total="14" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}">
+<header>支払い・経費処理方法</header>
 
-<p><span id="meeting"></span></p>
-<h2 id="%E6%89%93%E3%81%A1%E5%90%88%E3%82%8F%E3%81%9B%E5%B8%8C%E6%9C%9B%E3%81%AE%E5%A0%B4%E5%90%88">打ち合わせ希望の場合</h2>
-<h3 id="%E5%AF%BE%E5%BF%9C%E3%81%AE%E6%B5%81%E3%82%8C-1">対応の流れ</h3>
-<ul>
-<li>プロパティ更新</li>
-<li>タスク作成・依頼</li>
-</ul>
-<footer>2024.12.23 Mon マーケティング部 小松</footer>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>関連 PJ</td>
+<td>関連するものを一つ選択する。<br />&quot;410 ： (費用)スマートホーム、(所属)マーケティング部&quot; or &quot;420 ： (費用)コンタクトセンター、(所属)マーケティング部&quot; をよく使う。</td>
+</tr>
+<tr>
+<td>関連申請</td>
+<td>購買稟議申請があればここで探して指定する。</td>
+</tr>
+<tr>
+<td>内容</td>
+<td>支払いの内容を記載する。<br />請求書や領収書の明細欄にあるものをそのまま書き写せば OK 。</td>
+</tr>
+<tr>
+<td>支払先</td>
+<td>費用一覧表と同じ。</td>
+</tr>
+</tbody>
+</table>
+<footer>2024.9.5 Thu マーケティング部 栗原</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="12" data-paginate="true" data-header="IS 対応マニュアル FS 引き継ぎ対応 &gt; 打ち合わせ希望の場合" data-footer="2024.12.23 Mon マーケティング部 小松" data-theme="ume-orange" lang="ja-JP" data-marpit-pagination="11" style="--paginate:true;--header:IS 対応マニュアル FS 引き継ぎ対応 &gt; 打ち合わせ希望の場合;--footer:2024.12.23 Mon マーケティング部 小松;--theme:ume-orange;" data-marpit-pagination-total="17" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}">
-<header>IS 対応マニュアル FS 引き継ぎ対応 &gt; 打ち合わせ希望の場合</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="10" data-paginate="true" data-header="支払い・経費処理方法" data-footer="2024.9.5 Thu マーケティング部 栗原" data-class="sm" data-theme="ume-purple" lang="ja-JP" class="sm" data-marpit-pagination="9" style="--paginate:true;--header:支払い・経費処理方法;--footer:2024.9.5 Thu マーケティング部 栗原;--class:sm;--theme:ume-purple;" data-marpit-pagination-total="14" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}">
+<header>支払い・経費処理方法</header>
 
-<h3 id="1%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3%E6%9B%B4%E6%96%B0">1.プロパティ更新</h3>
-<p>コンタクトレコードの下記プロパティを更新する。<br />
-（担当者が変更になる場合のみ、コンタクト担当者を変更。）</p>
-<ul>
-<li>ライフサイクルステージを「SQL」に変更。</li>
-<li>問い合わせ内容分類（WF）の「打ち合わせ」選択。</li>
-<li>問い合わせパターン（WF）の「H - 引き継ぎのみ」選択。</li>
-<li>追客完了日を選択。</li>
-<li>IS対応完了の理由の「打ち合わせパス」選択。</li>
-<li>その他ヒアリング事項など更新できる箇所がある場合は、随時更新。</li>
-</ul>
-<p>自動でタスクが作成されることを確認。</p>
-<footer>2024.12.23 Mon マーケティング部 小松</footer>
+<h3 id="%E7%B6%9A%E3%81%8D-1">続き</h3>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>合計金額</td>
+<td>費用一覧表と同じ。</td>
+</tr>
+<tr>
+<td>支払い日</td>
+<td>費用一覧表と同じ。</td>
+</tr>
+<tr>
+<td>関連申請の添付がない理由、又稟議番号</td>
+<td>購買稟議がある場合、上と重複するが稟議番号をここに記入する。<br />少額で稟議が不要な場合などは &quot;稟議なし&quot; と書いておけば OK。</td>
+</tr>
+<tr>
+<td>支払い方法</td>
+<td>費用一覧表と同じ</td>
+</tr>
+<tr>
+<td>添付資料、その他</td>
+<td>該当するものを選択して、データ PDF やスクショの画像ファイルを添付する</td>
+</tr>
+<tr>
+<td>備考</td>
+<td>備考があれば何か書いておく。支払いが遅れていることなど。</td>
+</tr>
+</tbody>
+</table>
+<p>承認ルートはすべて井出常務を探して指定する。</p>
+<footer>2024.9.5 Thu マーケティング部 栗原</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="13" data-paginate="true" data-header="IS 対応マニュアル FS 引き継ぎ対応 &gt; 打ち合わせ希望の場合" data-footer="2024.12.23 Mon マーケティング部 小松" data-theme="ume-orange" lang="ja-JP" data-marpit-pagination="12" style="--paginate:true;--header:IS 対応マニュアル FS 引き継ぎ対応 &gt; 打ち合わせ希望の場合;--footer:2024.12.23 Mon マーケティング部 小松;--theme:ume-orange;" data-marpit-pagination-total="17" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}">
-<header>IS 対応マニュアル FS 引き継ぎ対応 &gt; 打ち合わせ希望の場合</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="11" data-paginate="true" data-header="支払い・経費処理方法" data-footer="2024.9.5 Thu マーケティング部 栗原" data-theme="ume-purple" lang="ja-JP" data-marpit-pagination="10" style="--paginate:true;--header:支払い・経費処理方法;--footer:2024.9.5 Thu マーケティング部 栗原;--theme:ume-purple;" data-marpit-pagination-total="14" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}">
+<header>支払い・経費処理方法</header>
 
-<h3 id="2%E3%82%BF%E3%82%B9%E3%82%AF%E4%BD%9C%E6%88%90">2.タスク作成</h3>
-<p>“打ち合わせ日時調整＆対応”タスクを作成する<br />
-自動化WFにて生成された”営業対応依頼_打ち合わせ”タスクの説明欄通りにタスク処理。</p>
-<h4 id="%E5%96%B6%E6%A5%AD%E5%AF%BE%E5%BF%9C%E4%BE%9D%E9%A0%BC_%E6%89%93%E3%81%A1%E5%90%88%E3%82%8F%E3%81%9B%E3%82%BF%E3%82%B9%E3%82%AF%E3%81%AE%E8%AA%AC%E6%98%8E%E6%AC%84">営業対応依頼_打ち合わせタスクの説明欄</h4>
-<p>[ ] 打ち合わせ日時調整 &amp; 対応タスクを作成<br />
-[ ] レコード担当者を営業に変更<br />
-[ ] ライフサイクルステージ = SQL に変更<br />
-[ ] 依頼</p>
-<footer>2024.12.23 Mon マーケティング部 小松</footer>
+<h3 id="%E7%B5%8C%E8%B2%BB%E7%B2%BE%E7%AE%97%E7%94%B3%E8%AB%8B">経費精算申請</h3>
+<p>ジョブカンの &quot;経費精算申請書&quot; を作成して提出する。</p>
+<p>基本的には支払依頼申請書と同じ。<br />
+明細欄などの記述がより細かい。</p>
+<footer>2024.9.5 Thu マーケティング部 栗原</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="14" data-paginate="true" data-header="IS 対応マニュアル FS 引き継ぎ対応 &gt; 打ち合わせ希望の場合" data-footer="2024.12.23 Mon マーケティング部 小松" data-theme="ume-orange" lang="ja-JP" data-marpit-pagination="13" style="--paginate:true;--header:IS 対応マニュアル FS 引き継ぎ対応 &gt; 打ち合わせ希望の場合;--footer:2024.12.23 Mon マーケティング部 小松;--theme:ume-orange;" data-marpit-pagination-total="17" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}">
-<header>IS 対応マニュアル FS 引き継ぎ対応 &gt; 打ち合わせ希望の場合</header>
-<div class="mail">
-スニペットを用いて引継ぎコメント追加。<br />
-各営業担当者と井出常務、栗原Ld、小松にそれぞれメンション。<br />
-<br />
-（例）<br />
-@前田 聖也<br />
-お疲れ様です。小松です。<br />
-打ち合わせのご依頼をいただきました。<br />
-引継ぎますのでご対応よろしくお願いいたします。<br />
-@井出 俊樹 @栗原 大輔<br />
-@小松 佳廉<br />
-お疲れ様です。小松です。<br />
-打ち合わせご希望につき営業案件としております。<br />
-<br />
-[ ] Trello ラベル更新<br />
-[ ] IS 対応完了の理由 = 打ち合わせ引き継ぎを入力<br />
-[ ] IS 対応完了日 = 本日の日付を入力<br />
-</div>
-<footer>2024.12.23 Mon マーケティング部 小松</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="15" data-paginate="true" data-header="IS 対応マニュアル FS 引き継ぎ対応 &gt; その他の場合" data-footer="2024.12.23 Mon マーケティング部 小松" data-theme="ume-orange" lang="ja-JP" data-marpit-pagination="14" style="--paginate:true;--header:IS 対応マニュアル FS 引き継ぎ対応 &gt; その他の場合;--footer:2024.12.23 Mon マーケティング部 小松;--theme:ume-orange;" data-marpit-pagination-total="17" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}">
-<header>IS 対応マニュアル FS 引き継ぎ対応 &gt; その他の場合</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="12" data-paginate="true" data-header="支払い・経費処理方法" data-footer="2024.9.5 Thu マーケティング部 栗原" data-theme="ume-purple" lang="ja-JP" data-marpit-pagination="11" style="--paginate:true;--header:支払い・経費処理方法;--footer:2024.9.5 Thu マーケティング部 栗原;--theme:ume-purple;" data-marpit-pagination-total="14" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}">
+<header>支払い・経費処理方法</header>
 
-<p><span id="other"></span></p>
-<h2 id="%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E5%A0%B4%E5%90%88">その他の場合</h2>
-<p>その他価格交渉等、引継ぎが発生した場合</p>
-<h3 id="%E5%AF%BE%E5%BF%9C%E3%81%AE%E6%B5%81%E3%82%8C-2">対応の流れ</h3>
-<ul>
-<li>プロパティ更新</li>
-<li>タスク作成・依頼</li>
-</ul>
-<footer>2024.12.23 Mon マーケティング部 小松</footer>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>申請タイトル</td>
+<td>年月日を入れる以外は支払いと一緒。</td>
+</tr>
+<tr>
+<td>承認期限</td>
+<td>いつまでに経費精算してほしいとかがあれば指定する。<br />指定しなくてもわりと早めに (月中くらいには) やってもらえる。</td>
+</tr>
+<tr>
+<td>事前申請</td>
+<td>購買稟議があればここで探して指定する。</td>
+</tr>
+<tr>
+<td>合計金額</td>
+<td>支払いと一緒。</td>
+</tr>
+<tr>
+<td>内容</td>
+<td>支払いと一緒。</td>
+</tr>
+<tr>
+<td>明細</td>
+<td>経費明細をこと細かに書いていく。詳細の説明は割愛する。</td>
+</tr>
+<tr>
+<td>備考</td>
+<td>決済方法や為替レートなど書いておく。</td>
+</tr>
+</tbody>
+</table>
+<p>承認ルート</p>
+<p>井出常務 --&gt; 井出常務 --&gt; 佐々木次長</p>
+<footer>2024.9.5 Thu マーケティング部 栗原</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="16" data-paginate="true" data-header="IS 対応マニュアル FS 引き継ぎ対応 &gt; その他の場合" data-footer="2024.12.23 Mon マーケティング部 小松" data-theme="ume-orange" lang="ja-JP" data-marpit-pagination="15" style="--paginate:true;--header:IS 対応マニュアル FS 引き継ぎ対応 &gt; その他の場合;--footer:2024.12.23 Mon マーケティング部 小松;--theme:ume-orange;" data-marpit-pagination-total="17" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}">
-<header>IS 対応マニュアル FS 引き継ぎ対応 &gt; その他の場合</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="13" data-paginate="true" data-header="支払い・経費処理方法" data-footer="2024.9.5 Thu マーケティング部 栗原" data-theme="ume-purple" lang="ja-JP" data-marpit-pagination="12" style="--paginate:true;--header:支払い・経費処理方法;--footer:2024.9.5 Thu マーケティング部 栗原;--theme:ume-purple;" data-marpit-pagination-total="14" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}">
+<header>支払い・経費処理方法</header>
 
-<h3 id="1%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3%E6%9B%B4%E6%96%B0-1">1.プロパティ更新</h3>
-<p>コンタクトプロパティ・会社プロパティを変更する</p>
-<h4 id="%E3%82%B3%E3%83%B3%E3%82%BF%E3%82%AF%E3%83%88%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3">コンタクトプロパティ</h4>
-<ul>
-<li>コンタクト担当者を営業担当者へ</li>
-<li>ライフサイクルステージ = SQL に変更</li>
-<li>IS 対応完了の理由 = 該当する値を選択</li>
-<li>IS 対応完了日 = 本日の日付を入力</li>
-</ul>
-<h4 id="%E4%BC%9A%E7%A4%BE%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3">会社プロパティ</h4>
-<ul>
-<li>会社の担当者を営業担当者へ</li>
-</ul>
-<footer>2024.12.23 Mon マーケティング部 小松</footer>
+<p><span id="ask"></span></p>
+<h2 id="%E5%87%BA%E7%A4%BE%E3%83%A1%E3%83%B3%E3%83%90%E3%83%BC%E3%81%AB%E7%B4%99%E5%87%A6%E7%90%86%E3%82%92%E4%BE%9D%E9%A0%BC%E3%81%99%E3%82%8B">出社メンバーに紙処理を依頼する</h2>
+<p>ジョブカンでの申請が完了したら、Trello 等にて出社メンバーに処理を依頼する。<br />
+ジョブカンの申請ページは、事前に出社メンバーに共有しておく。<br />
+じゃないと紙処理に必要な申請ページにアクセスできないため。</p>
+<footer>2024.9.5 Thu マーケティング部 栗原</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="17" data-paginate="true" data-header="IS 対応マニュアル FS 引き継ぎ対応 &gt; その他の場合" data-footer="2024.12.23 Mon マーケティング部 小松" data-theme="ume-orange" lang="ja-JP" data-marpit-pagination="16" style="--paginate:true;--header:IS 対応マニュアル FS 引き継ぎ対応 &gt; その他の場合;--footer:2024.12.23 Mon マーケティング部 小松;--theme:ume-orange;" data-marpit-pagination-total="17" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}">
-<header>IS 対応マニュアル FS 引き継ぎ対応 &gt; その他の場合</header>
-<div class="columns-2">
-<div>
-<h3 id="2%E3%82%BF%E3%82%B9%E3%82%AF%E4%BD%9C%E6%88%90-1">2.タスク作成</h3>
-<p>タスクを作成する<br />
-こちら参照のうえ必要なタスクを随時作成し、営業担当者へ割り当て。<br />
-タスクのコメントより引継ぎコメント追加。<br />
-各営業担当者と井出常務、栗原Ld、小松にそれぞれメンション。</p>
-</div>
-<div class="mail">
-（例）<br />
-<br />
-@前田 聖也<br />
-お疲れ様です。小松です。<br />
-〇〇のご依頼をいただきました。<br />
-引継ぎますのでご対応よろしくお願いいたします。<br />
-<br />
-@井出 俊樹 @栗原 大輔<br />
-@小松 佳廉<br />
-お疲れ様です。小松です。<br />
-〇〇ご希望につき営業案件としております。
-</div>
-</div>
-<footer>2024.12.23 Mon マーケティング部 小松</footer>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="14" data-paginate="true" data-header="支払い・経費処理方法" data-footer="2024.9.5 Thu マーケティング部 栗原" data-theme="ume-purple" lang="ja-JP" data-marpit-pagination="13" style="--paginate:true;--header:支払い・経費処理方法;--footer:2024.9.5 Thu マーケティング部 栗原;--theme:ume-purple;" data-marpit-pagination-total="14" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}">
+<header>支払い・経費処理方法</header>
+
+<p><span id="paperwork"></span></p>
+<h2 id="%E5%87%BA%E7%A4%BE%E3%83%A1%E3%83%B3%E3%83%90%E3%83%BC%E3%81%8C%E5%87%BA%E7%A4%BE%E6%99%82%E3%81%AB%E7%B4%99%E3%82%92%E5%87%A6%E7%90%86%E3%81%99%E3%82%8B">出社メンバーが出社時に紙を処理する</h2>
+<p>次に出社するメンバーが、一覧表の処理ステータス = 紙処理前 になってるやつをまとめて処理する。</p>
+<footer>2024.9.5 Thu マーケティング部 栗原</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="18" data-paginate="true" data-header="IS 対応マニュアル FS 引き継ぎ対応" data-footer="2024.12.23 Mon マーケティング部 小松" data-class="cover" data-theme="ume-orange" lang="ja-JP" class="cover" data-marpit-pagination="17" style="--paginate:true;--header:IS 対応マニュアル FS 引き継ぎ対応;--footer:2024.12.23 Mon マーケティング部 小松;--class:cover;--theme:ume-orange;" data-marpit-pagination-total="17" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;300ms&quot;,&quot;builtinFallback&quot;:true}">
-<header>IS 対応マニュアル FS 引き継ぎ対応</header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1440 900"><foreignObject width="1440" height="900"><section id="15" data-paginate="true" data-header="支払い・経費処理方法" data-footer="2024.9.5 Thu マーケティング部 栗原" data-class="cover" data-theme="ume-purple" lang="ja-JP" class="cover" data-marpit-pagination="14" style="--paginate:true;--header:支払い・経費処理方法;--footer:2024.9.5 Thu マーケティング部 栗原;--class:cover;--theme:ume-purple;" data-marpit-pagination-total="14" data-transition-back="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}" data-transition="{&quot;name&quot;:&quot;pull&quot;,&quot;duration&quot;:&quot;400ms&quot;,&quot;builtinFallback&quot;:true}">
+<header>支払い・経費処理方法</header>
 
 <h1 id="%E3%81%8A%E3%81%97%E3%81%BE%E3%81%84">おしまい</h1>
-<footer>2024.12.23 Mon マーケティング部 小松</footer>
+<footer>2024.9.5 Thu マーケティング部 栗原</footer>
 </section>
 <script>!function(){"use strict";const t={h1:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"1"},style:"display: block; font-size: 2em; margin-block-start: 0.67em; margin-block-end: 0.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h2:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"2"},style:"display: block; font-size: 1.5em; margin-block-start: 0.83em; margin-block-end: 0.83em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h3:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"3"},style:"display: block; font-size: 1.17em; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h4:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"4"},style:"display: block; margin-block-start: 1.33em; margin-block-end: 1.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h5:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"5"},style:"display: block; font-size: 0.83em; margin-block-start: 1.67em; margin-block-end: 1.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h6:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"6"},style:"display: block; font-size: 0.67em; margin-block-start: 2.33em; margin-block-end: 2.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},span:{proto:()=>HTMLSpanElement},pre:{proto:()=>HTMLElement,style:"display: block; font-family: monospace; white-space: pre; margin: 1em 0; --marp-auto-scaling-white-space: pre;"}},e="data-marp-auto-scaling-wrapper",i="data-marp-auto-scaling-svg",n="data-marp-auto-scaling-container";class s extends HTMLElement{constructor(){super(),this.svgPreserveAspectRatio="xMinYMid meet";const t=t=>([e])=>{const{width:i,height:n}=e.contentRect;this[t]={width:i,height:n},this.updateSVGRect()};this.attachShadow({mode:"open"}),this.containerObserver=new ResizeObserver(t("containerSize")),this.wrapperObserver=new ResizeObserver(((...e)=>{t("wrapperSize")(...e),this.flushSvgDisplay()}))}static get observedAttributes(){return["data-downscale-only"]}connectedCallback(){var t,s,o,r,a;this.shadowRoot.innerHTML=`\n<style>\n  svg[${i}] { display: block; width: 100%; height: auto; vertical-align: top; }\n  span[${n}] { display: table; white-space: var(--marp-auto-scaling-white-space, nowrap); width: max-content; }\n</style>\n<div ${e}>\n  <svg part="svg" ${i}>\n    <foreignObject><span ${n}><slot></slot></span></foreignObject>\n  </svg>\n</div>\n    `.split(/\n\s*/).join(""),this.wrapper=null!==(t=this.shadowRoot.querySelector(`div[${e}]`))&&void 0!==t?t:void 0;const l=this.svg;this.svg=null!==(o=null===(s=this.wrapper)||void 0===s?void 0:s.querySelector(`svg[${i}]`))&&void 0!==o?o:void 0,this.svg!==l&&(this.svgComputedStyle=this.svg?window.getComputedStyle(this.svg):void 0),this.container=null!==(a=null===(r=this.svg)||void 0===r?void 0:r.querySelector(`span[${n}]`))&&void 0!==a?a:void 0,this.observe()}disconnectedCallback(){this.svg=void 0,this.svgComputedStyle=void 0,this.wrapper=void 0,this.container=void 0,this.observe()}attributeChangedCallback(){this.observe()}flushSvgDisplay(){const{svg:t}=this;t&&(t.style.display="inline",requestAnimationFrame((()=>{t.style.display=""})))}observe(){this.containerObserver.disconnect(),this.wrapperObserver.disconnect(),this.wrapper&&this.wrapperObserver.observe(this.wrapper),this.container&&this.containerObserver.observe(this.container),this.svgComputedStyle&&this.observeSVGStyle(this.svgComputedStyle)}observeSVGStyle(t){const e=()=>{const i=(()=>{const e=t.getPropertyValue("--preserve-aspect-ratio");if(e)return e.trim();return`x${(({textAlign:t,direction:e})=>{if(t.endsWith("left"))return"Min";if(t.endsWith("right"))return"Max";if("start"===t||"end"===t){let i="rtl"===e;return"end"===t&&(i=!i),i?"Max":"Min"}return"Mid"})(t)}YMid meet`})();i!==this.svgPreserveAspectRatio&&(this.svgPreserveAspectRatio=i,this.updateSVGRect()),t===this.svgComputedStyle&&requestAnimationFrame(e)};e()}updateSVGRect(){var t,e,i,n,s,o,r;let a=Math.ceil(null!==(e=null===(t=this.containerSize)||void 0===t?void 0:t.width)&&void 0!==e?e:0);const l=Math.ceil(null!==(n=null===(i=this.containerSize)||void 0===i?void 0:i.height)&&void 0!==n?n:0);void 0!==this.dataset.downscaleOnly&&(a=Math.max(a,null!==(o=null===(s=this.wrapperSize)||void 0===s?void 0:s.width)&&void 0!==o?o:0));const c=null===(r=this.svg)||void 0===r?void 0:r.querySelector(":scope > foreignObject");if(null==c||c.setAttribute("width",`${a}`),null==c||c.setAttribute("height",`${l}`),this.svg&&(this.svg.setAttribute("viewBox",`0 0 ${a} ${l}`),this.svg.setAttribute("preserveAspectRatio",this.svgPreserveAspectRatio),this.svg.style.height=a<=0||l<=0?"0":""),this.container){const t=this.svgPreserveAspectRatio.toLowerCase();this.container.style.marginLeft=t.startsWith("xmid")||t.startsWith("xmax")?"auto":"0",this.container.style.marginRight=t.startsWith("xmi")?"auto":"0"}}}const o=(t,{attrs:e={},style:i})=>class extends t{constructor(...t){super(...t);for(const[t,i]of Object.entries(e))this.hasAttribute(t)||this.setAttribute(t,i);this.attachShadow({mode:"open"})}static get observedAttributes(){return["data-auto-scaling"]}connectedCallback(){this._update()}attributeChangedCallback(){this._update()}_update(){const t=i?`<style>:host { ${i} }</style>`:"";let e="<slot></slot>";const{autoScaling:n}=this.dataset;if(void 0!==n){e=`<marp-auto-scaling exportparts="svg:auto-scaling" ${"downscale-only"===n?"data-downscale-only":""}>${e}</marp-auto-scaling>`}this.shadowRoot.innerHTML=t+e}};let r;const a=Symbol();let l;const c="marpitSVGPolyfill:setZoomFactor,",d=Symbol(),g=Symbol();const h=()=>{const t="Apple Computer, Inc."===navigator.vendor,e=t?[u]:[],i={then:e=>(t?(async()=>{if(void 0===l){const t=document.createElement("canvas");t.width=10,t.height=10;const e=t.getContext("2d"),i=new Image(10,10),n=new Promise((t=>{i.addEventListener("load",(()=>t()))}));i.crossOrigin="anonymous",i.src="data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%20viewBox%3D%220%200%201%201%22%3E%3CforeignObject%20width%3D%221%22%20height%3D%221%22%20requiredExtensions%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%20style%3D%22width%3A%201px%3B%20height%3A%201px%3B%20background%3A%20red%3B%20position%3A%20relative%22%3E%3C%2Fdiv%3E%3C%2FforeignObject%3E%3C%2Fsvg%3E",await n,e.drawImage(i,0,0),l=e.getImageData(5,5,1,1).data[3]<128}return l})().then((t=>{null==e||e(t?[u]:[])})):null==e||e([]),i)};return Object.assign(e,i)};let p,m;function u(t){const e="object"==typeof t&&t.target||document,i="object"==typeof t?t.zoom:t;window[g]||(Object.defineProperty(window,g,{configurable:!0,value:!0}),document.body.style.zoom=1.0001,document.body.offsetHeight,document.body.style.zoom=1,window.addEventListener("message",(({data:t,origin:e})=>{if(e===window.origin)try{if(t&&"string"==typeof t&&t.startsWith(c)){const[,e]=t.split(","),i=Number.parseFloat(e);Number.isNaN(i)||(m=i)}}catch(t){console.error(t)}})));let n=!1;Array.from(e.querySelectorAll("svg[data-marpit-svg]"),(t=>{var e,s,o,r;t.style.transform||(t.style.transform="translateZ(0)");const a=i||m||t.currentScale||1;p!==a&&(p=a,n=a);const l=t.getBoundingClientRect(),{length:c}=t.children;for(let i=0;i<c;i+=1){const n=t.children[i];if(n.getScreenCTM){const t=n.getScreenCTM();if(t){const i=null!==(s=null===(e=n.x)||void 0===e?void 0:e.baseVal.value)&&void 0!==s?s:0,c=null!==(r=null===(o=n.y)||void 0===o?void 0:o.baseVal.value)&&void 0!==r?r:0,d=n.children.length;for(let e=0;e<d;e+=1){const s=n.children[e];if("SECTION"===s.tagName){const{style:e}=s;e.transformOrigin||(e.transformOrigin=`${-i}px ${-c}px`),e.transform=`scale(${a}) matrix(${t.a}, ${t.b}, ${t.c}, ${t.d}, ${t.e-l.left}, ${t.f-l.top}) translateZ(0.0001px)`;break}}}}}})),!1!==n&&Array.from(e.querySelectorAll("iframe"),(({contentWindow:t})=>{null==t||t.postMessage(`${c}${n}`,"null"===window.origin?"*":window.origin)}))}function v({once:t=!1,target:e=document}={}){const i=function(t=document){if(t[d])return t[d];let e=!0;const i=()=>{e=!1,delete t[d]};Object.defineProperty(t,d,{configurable:!0,value:i});let n=[],s=!1;(async()=>{try{n=await h()}finally{s=!0}})();const o=()=>{for(const e of n)e({target:t});s&&0===n.length||e&&window.requestAnimationFrame(o)};return o(),i}(e);return t?(i(),()=>{}):i}p=1,m=void 0;const b=Symbol(),w=(e=document)=>{if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");if(((e=document)=>{const i=window[a];i||customElements.define("marp-auto-scaling",s);for(const n of Object.keys(t)){const s=`marp-${n}`,a=t[n].proto();null!=r||(r=!!document.createElement("div",{is:"marp-auto-scaling"}).outerHTML.startsWith("<div is")),r&&a!==HTMLElement?i||customElements.define(s,o(a,{style:t[n].style}),{extends:n}):(i||customElements.define(s,o(HTMLElement,t[n])),e.querySelectorAll(`${n}[is="${s}"]`).forEach((t=>{t.outerHTML=t.outerHTML.replace(new RegExp(`^<${n}`,"i"),`<${s}`).replace(new RegExp(`</${n}>$`,"i"),`</${s}>`)})))}window[a]=!0})(e),e[b])return e[b];const i=v({target:e}),n=()=>{i(),delete e[b]},l=Object.assign(n,{cleanup:n,update:()=>w(e)});return Object.defineProperty(e,b,{configurable:!0,value:l}),l},y=document.currentScript;w(y?y.getRootNode():document)}();
 </script></foreignObject></svg></div><script>/*!! License: https://unpkg.com/@marp-team/marp-cli@3.4.0/lib/bespoke.js.LICENSE.txt */

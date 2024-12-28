@@ -547,7 +547,7 @@ h4 {
         weight: $font-weight-heavy;
     }
 
-    color: colors.$primary;
+    color: colors.$secondary;
     opacity: .8;
 
     margin: 0 {
@@ -607,6 +607,8 @@ li {
 
 a {
     color: colors.$secondary;
+    text-decoration-thickness: 3px;
+    text-decoration-color: colors.$secondary-light-80;
 }
 
 .center {
@@ -624,13 +626,14 @@ div.columns-2 {
 }
 
 div.mail {
-    border: 2px solid colors.$secondary-light-60 {
+    border: 2px solid colors.$secondary-light-40 {
         radius: .3em;
     }
+    box-shadow: 10px 10px 20px colors.$secondary-light-20;
 
     padding: calc($padding-global / 4);
 
-    >div {
+    & > div:first-of-type {
         border: {
             top: 1px solid colors.$accent;
             bottom: 1px solid colors.$accent;

@@ -26,10 +26,10 @@ transition : pull 400ms
 </div>
 <div>
 
-- 概要
-- 役割分担・業務内容
-- 連携・運用の例
-- スケジュール
+- [概要](#overview)
+- [役割分担・業務内容](#roles)
+- [連携・運用の例](#cases)
+- [スケジュール](#schedule)
 
 </div>
 </div>
@@ -37,6 +37,7 @@ transition : pull 400ms
 ---
 <!-- _header : マーケ新体制案 > 2 チームに分割 -->
 <!-- _class: sub -->
+<span id="overview"></span>
 
 <div>
 <div>
@@ -188,6 +189,8 @@ transition : pull 400ms
 ---
 <!-- _header : マーケ新体制案 > 役割分担・業務内容 -->
 <!-- _class: sub -->
+<span id="roles"></span>
+
 <div>
 <div>
 
@@ -474,6 +477,7 @@ D チームの分析の元となるデータを入力する。
 ---
 <!-- _header : マーケ新体制案 > 連携・運用の例 -->
 <!-- _class: sub -->
+<span id="cases"></span>
 
 <div>
 <div>
@@ -1039,6 +1043,7 @@ Strategy 担当を補佐する。
 
 ---
 <!-- _header : マーケ新体制案 > スケジュール -->
+<span id="schedule"></span>
 
 ## スケジュール
 

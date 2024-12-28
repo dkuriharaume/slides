@@ -1,4 +1,4 @@
-/* @theme ume_default_custom_4 */
+/* @theme ume-green */
 /*
 
 copy ../../images to your project's directory
@@ -6,7 +6,7 @@ copy ../../images to your project's directory
 */
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Noto+Sans+JP:wght@100..900&display=swap");
 h2, section.impact h1 {
-  background-image: linear-gradient(to bottom right, #82c994, hsl(165, 80%, 25%) 100%);
+  background-image: linear-gradient(to bottom right, hsl(10, 82%, 74%), hsl(295, 64%, 26%) 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -36,7 +36,7 @@ section {
   width: 1440px;
   height: 900px;
   text-align: left;
-  color: hsl(22, 50%, 20%);
+  color: hsl(134, 29%, 31%);
   background-color: white;
   align-content: center;
   margin: 0;
@@ -52,7 +52,7 @@ section::after {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  color: hsl(165, 80%, 25%);
+  color: hsl(295, 64%, 26%);
 }
 section.image-h100 img {
   all: unset;
@@ -201,12 +201,12 @@ section.vsm table * {
   font-size: 0.91rem;
 }
 section.cover {
-  background-color: hsl(22, 50%, 20%);
+  background-color: hsl(134, 29%, 31%);
   position: relative;
   align-content: center;
 }
 section.cover::after {
-  color: #82c994;
+  color: hsl(10, 82%, 74%);
 }
 section.cover::before {
   content: "";
@@ -242,20 +242,20 @@ section.cover h2 {
   -webkit-text-fill-color: unset;
   text-align: center;
   margin: 0.3em 0;
-  color: #82c994;
+  color: hsl(10, 82%, 74%);
 }
 section.cover h2::after {
   all: unset;
 }
 section.cover h3 {
-  color: #e4dfdd;
+  color: #e1e8e3;
   text-align: center;
 }
 section.cover header {
   all: unset;
 }
 section.cover footer {
-  color: #82c994;
+  color: hsl(10, 82%, 74%);
 }
 section.overview {
   padding: 0;
@@ -272,7 +272,7 @@ section.overview > div > div {
   padding-bottom: 100px;
 }
 section.overview > div > div:first-child {
-  background-color: hsl(22, 50%, 20%);
+  background-color: hsl(134, 29%, 31%);
   color: white;
   padding-right: 50px;
 }
@@ -281,7 +281,7 @@ section.overview > div > div:nth-child(2) {
 }
 section.overview h2 {
   font-size: 3rem;
-  color: #e4dfdd;
+  color: #e1e8e3;
   background-image: unset;
   background-clip: unset;
   -webkit-text-fill-color: unset;
@@ -306,17 +306,17 @@ section.overview li {
   margin: 0;
   font-size: 2.5rem;
   font-weight: 700;
-  color: hsl(165, 80%, 25%);
+  color: hsl(295, 64%, 26%);
 }
 section.overview li::marker {
-  color: #82c994;
+  color: hsl(10, 82%, 74%);
 }
 section.overview.sm li {
   font-size: 1.5rem;
 }
 section.overview > header,
 section.overview > footer {
-  color: #e4dfdd;
+  color: #e1e8e3;
 }
 section.sub {
   padding: 0;
@@ -328,7 +328,7 @@ section.sub > div {
 }
 section.sub > div > div:first-child {
   flex: 0 0 0;
-  background-color: hsl(22, 50%, 20%);
+  background-color: hsl(134, 29%, 31%);
   color: white;
   padding: 100px;
   padding-top: 101px;
@@ -342,7 +342,7 @@ section.sub > div > div:nth-child(2) {
 }
 section.sub h2 {
   font-size: 3rem;
-  color: #e4dfdd;
+  color: #e1e8e3;
   background-image: unset;
   background-clip: unset;
   -webkit-text-fill-color: unset;
@@ -363,22 +363,22 @@ section.sub li {
   flex: 0 0 auto;
   font-size: 2.5rem;
   font-weight: 700;
-  color: hsl(165, 80%, 25%);
+  color: hsl(295, 64%, 26%);
   margin: 0;
   padding: 0;
 }
 section.sub li::marker {
-  color: #82c994;
+  color: hsl(10, 82%, 74%);
 }
 section.sub.sm li {
   font-size: 2rem;
 }
 section.sub header {
-  color: #e4dfdd;
+  color: #e1e8e3;
 }
 footer, header {
   width: 100%;
-  color: hsl(165, 80%, 25%);
+  color: hsl(295, 64%, 26%);
   position: absolute;
   padding-left: 100px;
   left: 0;
@@ -387,8 +387,8 @@ footer, header {
 
 header {
   height: 100px;
-  background-color: hsl(22, 50%, 20%);
-  color: #e4dfdd;
+  background-color: hsl(134, 29%, 31%);
+  color: #e1e8e3;
   font-size: 1.5rem;
   top: 0;
 }
@@ -419,13 +419,13 @@ h2::after {
   height: 7px;
   margin-top: 10px;
   margin-bottom: 1em;
-  background-color: #948076;
+  background-color: #88a38e;
 }
 
 h3 {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #715648;
+  color: #608569;
   margin: 0;
   margin-bottom: 0.8em;
   position: relative;
@@ -439,13 +439,13 @@ h3::before {
   left: calc(0em - 2.34rem);
   width: 1.8rem;
   height: 1.8rem;
-  background-color: #82c994;
+  background-color: hsl(10, 82%, 74%);
 }
 
 h4 {
   font-size: 1.44rem;
   font-weight: 700;
-  color: hsl(22, 50%, 20%);
+  color: hsl(295, 64%, 26%);
   opacity: 0.8;
   margin: 0;
   margin-bottom: 0.6em;
@@ -456,31 +456,31 @@ p {
   line-height: 1.7em;
   margin: 0;
   margin-bottom: 1em;
-  color: #715648;
+  color: #608569;
 }
 
 table {
-  border: 1px solid hsl(165, 80%, 25%);
+  border: 1px solid hsl(295, 64%, 26%);
   border-collapse: collapse;
 }
 
 th,
 td {
-  border: 1px solid #82c994;
+  border: 1px solid hsl(10, 82%, 74%);
   border-collapse: collapse;
   padding: 0.4em;
 }
 
 tr {
-  color: #715648;
+  color: #608569;
 }
 tr:nth-child(2n) * {
-  background-color: #e4dfdd;
-  color: hsl(22, 50%, 20%);
+  background-color: #e1e8e3;
+  color: hsl(134, 29%, 31%);
 }
 
 th {
-  background-color: #82c994;
+  background-color: hsl(10, 82%, 74%);
 }
 
 li {
@@ -489,11 +489,13 @@ li {
   margin: 0.4em 0;
 }
 li::marker {
-  color: hsl(165, 80%, 25%);
+  color: hsl(295, 64%, 26%);
 }
 
 a {
-  color: hsl(165, 80%, 25%);
+  color: hsl(295, 64%, 26%);
+  text-decoration-thickness: 3px;
+  text-decoration-color: #85468a;
 }
 
 .center {
@@ -510,13 +512,14 @@ div.columns-2 > div {
 }
 
 div.mail {
-  border: 2px solid #6eab9b;
+  border: 2px solid #c2a3c5;
   border-radius: 0.3em;
+  box-shadow: 10px 10px 20px #e0d1e2;
   padding: 25px;
 }
-div.mail > div {
-  border-top: 1px solid #82c994;
-  border-bottom: 1px solid #82c994;
+div.mail > div:first-of-type {
+  border-top: 1px solid hsl(10, 82%, 74%);
+  border-bottom: 1px solid hsl(10, 82%, 74%);
 }
 div.mail * {
   font-size: 0.98rem;
@@ -524,7 +527,7 @@ div.mail * {
 
 blockquote {
   border-radius: 1em;
-  background-color: #dbd5d1;
+  background-color: #d7e0d9;
   padding: 0.7em;
 }
 blockquote p {
@@ -532,4 +535,4 @@ blockquote p {
   font-size: 1rem;
 }
 
-/*# sourceMappingURL=custom4.css.map */
+/*# sourceMappingURL=green.css.map */

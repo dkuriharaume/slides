@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 354.13 354.33">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: url(#_名称未設定グラデーション_6);
+      }
+
+      .cls-3 {
+        fill: url(#_名称未設定グラデーション_5);
+      }
+
+      .cls-4 {
+        fill: url(#_名称未設定グラデーション_4);
+      }
+
+      .cls-5 {
+        fill: url(#_名称未設定グラデーション_3);
+      }
+
+      .cls-6 {
+        fill: url(#_名称未設定グラデーション_7);
+      }
+
+      .cls-7 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-8 {
+        clip-path: url(#clippath-3);
+      }
+
+      .cls-9 {
+        clip-path: url(#clippath-4);
+      }
+
+      .cls-10 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-11 {
+        clip-path: url(#clippath-6);
+      }
+
+      .cls-12 {
+        clip-path: url(#clippath-5);
+      }
+
+      .cls-13 {
+        fill: #fffffe;
+      }
+
+      .cls-14 {
+        fill: url(#_名称未設定グラデーション_3-2);
+      }
+
+      .cls-15 {
+        opacity: .9;
+      }
+
+      .cls-16 {
+        opacity: .8;
+      }
+
+      .cls-17 {
+        opacity: .3;
+      }
+
+      .cls-18 {
+        fill: url(#_名称未設定グラデーション);
+      }
+
+      .cls-19 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <linearGradient id="_名称未設定グラデーション" data-name="名称未設定グラデーション" x1="177.07" y1="56.23" x2="177.07" y2="410.37" gradientTransform="translate(0 410.57) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2e8bad"/>
+      <stop offset=".09" stop-color="#046da8"/>
+      <stop offset="1" stop-color="#00a3da"/>
+    </linearGradient>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="4.17" y="65.48" width="267.78" height="267.8"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <path class="cls-1" d="M138.06,333.28c75.31-.98,132-59.28,133.89-133.9h0c-.99-75.32-59.26-132.01-133.89-133.89C64.12,65.48,4.17,125.43,4.17,199.37s59.94,133.91,133.89,133.91Z"/>
+    </clipPath>
+    <linearGradient id="_名称未設定グラデーション_3" data-name="名称未設定グラデーション 3" x1="138.06" y1="477.85" x2="138.06" y2="210.05" gradientTransform="translate(0 -144.57)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#42a3cf" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#80cde8" stop-opacity=".5"/>
+    </linearGradient>
+    <clipPath id="clippath-2">
+      <rect class="cls-1" x="82.59" y="65.48" width="267.78" height="267.8"/>
+    </clipPath>
+    <clipPath id="clippath-3">
+      <path class="cls-1" d="M216.48,333.28c75.31-.98,132-59.28,133.89-133.9h0c-.99-75.32-59.26-132.01-133.89-133.89-75.3.99-132,59.26-133.89,133.88v.02c.99,75.31,59.26,132.01,133.89,133.9Z"/>
+    </clipPath>
+    <linearGradient id="_名称未設定グラデーション_3-2" data-name="名称未設定グラデーション 3" x1="216.48" x2="216.48" xlink:href="#_名称未設定グラデーション_3"/>
+    <clipPath id="clippath-4">
+      <path class="cls-1" d="M177.27,327.44c44.76-13.65,78.38-50.17,90.56-94.98-27.57,25.04-60.63,36.14-97.62,35.15-32.31-1.69-61.34-14.71-83.46-35,11.56,45.23,46.13,81.25,90.52,94.82Z"/>
+    </clipPath>
+    <linearGradient id="_名称未設定グラデーション_4" data-name="名称未設定グラデーション 4" x1="177.29" y1="472" x2="177.29" y2="377.03" gradientTransform="translate(0 -144.57)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4282a0" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#93c1d1"/>
+    </linearGradient>
+    <linearGradient id="_名称未設定グラデーション_5" data-name="名称未設定グラデーション 5" x1="177.07" y1="56.23" x2="177.07" y2="410.37" gradientTransform="translate(0 410.57) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1a2534" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#1a2534" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="_名称未設定グラデーション_6" data-name="名称未設定グラデーション 6" cx="298.57" cy="307.8" fx="298.57" fy="307.8" r="52.03" gradientTransform="translate(0 410.57) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2c365e"/>
+      <stop offset="0" stop-color="#2c365e" stop-opacity=".36"/>
+      <stop offset="1" stop-color="#2c365e" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="clippath-5">
+      <rect class="cls-1" x="43.33" width="267.78" height="267.8"/>
+    </clipPath>
+    <clipPath id="clippath-6">
+      <path class="cls-1" d="M177.1,267.8c72.83-2,128.15-54.12,133.82-126.9l.19-6.87v-.03C309.11,61.18,257.01,5.85,184.23.19l-6.86-.19h-.04C104.51,2,49.18,54.11,43.52,126.89c-3.87,73.85,52.85,136.86,126.7,140.73l6.89.19Z"/>
+    </clipPath>
+    <radialGradient id="_名称未設定グラデーション_7" data-name="名称未設定グラデーション 7" cx="34.24" cy="233.14" fx="34.24" fy="233.14" r="85.33" gradientTransform="translate(0 -144.57)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fffffe"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".05"/>
+    </radialGradient>
+  </defs>
+  <g id="_レイヤー_1-2" data-name="レイヤー_1">
+    <g id="_レイヤー_1-3" data-name="レイヤー_1">
+      <g>
+        <path class="cls-18" d="M0,177.26c0,97.79,79.28,177.07,177.07,177.07h0c97.79,0,177.07-79.28,177.07-177.07h0C354.13,79.47,274.86.2,177.07.2h0C79.28.2,0,79.47,0,177.26Z"/>
+        <g>
+          <g class="cls-19">
+            <g class="cls-15">
+              <g class="cls-7">
+                <g class="cls-16">
+                  <path class="cls-5" d="M138.06,333.28c73.95,0,133.89-59.96,133.89-133.91s-59.94-133.89-133.89-133.89S4.17,125.43,4.17,199.37s59.94,133.91,133.89,133.91Z"/>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g class="cls-10">
+            <g class="cls-15">
+              <g class="cls-8">
+                <g class="cls-16">
+                  <path class="cls-14" d="M216.48,333.28c73.95,0,133.89-59.96,133.89-133.91s-59.94-133.89-133.89-133.89c-75.3.99-132,59.25-133.89,133.88v.02c.99,75.3,59.27,132.01,133.89,133.89Z"/>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g class="cls-9">
+            <path class="cls-4" d="M177.27,327.44c44.43-13.59,79.04-49.68,90.56-94.98-25.56,23.5-60.19,37.11-97.62,35.15-31.3-1.48-60.12-14.47-83.46-35h0c11.53,45.3,46.4,80.54,90.52,94.82Z"/>
+          </g>
+        </g>
+        <path class="cls-3" d="M0,177.26c0,97.79,79.28,177.07,177.07,177.07h0c97.79,0,177.07-79.28,177.07-177.07h0C354.13,79.47,274.86.2,177.07.2h0C79.28.2,0,79.47,0,177.26Z"/>
+        <path class="cls-2" d="M0,177.26c0,97.79,79.28,177.07,177.07,177.07h0c97.79,0,177.07-79.28,177.07-177.07h0C354.13,79.47,274.86.2,177.07.2h0C79.28.2,0,79.47,0,177.26Z"/>
+        <g>
+          <path class="cls-13" d="M177.27,71.32c-54.81,16.76-94.68,67.75-94.68,128.05,0,11.47,1.44,22.6,4.16,33.22,23.83,21.86,55.59,35.2,90.47,35.2s66.76-13.4,90.6-35.33c2.69-10.59,4.13-21.67,4.13-33.1,0-60.3-39.86-111.29-94.68-128.05"/>
+          <g class="cls-12">
+            <g class="cls-17">
+              <path class="cls-13" d="M310.92,140.9c-3.87,73.85-66.85,130.59-140.71,126.72-73.85-3.87-130.57-66.88-126.7-140.73S110.38-3.68,184.23.19c73.86,3.87,130.56,66.87,126.69,140.71"/>
+            </g>
+          </g>
+          <g class="cls-11">
+            <path class="cls-6" d="M177.1,267.8c72.83-2,128.15-54.12,133.82-126.9l.19-6.87v-.03C309.11,61.18,257.01,5.85,184.23.19l-6.87-.19h-.03C104.51,2,49.18,54.11,43.52,126.89c-3.87,73.85,52.85,136.86,126.7,140.73l6.89.19Z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
