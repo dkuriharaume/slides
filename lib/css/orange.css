@@ -1,0 +1,535 @@
+/* @theme ume-orange */
+/*
+
+copy ../../images to your project's directory
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Noto+Sans+JP:wght@100..900&display=swap");
+h2, section.impact h1 {
+  background-image: linear-gradient(to bottom right, #82c994, hsl(165, 80%, 25%) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url("./images/ume_logo_mono_2.png");
+  background-position: center;
+  background-size: 120%;
+  mix-blend-mode: screen;
+  top: 0;
+  right: 20px;
+  z-index: 1;
+}
+
+:root {
+  font-size: 16pt;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+section {
+  position: relative;
+  width: 1440px;
+  height: 900px;
+  text-align: left;
+  color: hsl(25, 80%, 45%);
+  background-color: white;
+  align-content: center;
+  margin: 0;
+  padding-top: 150px;
+  padding-bottom: 125px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+section::after {
+  all: unset;
+  content: "Page " attr(data-marpit-pagination) " / " attr(data-marpit-pagination-total);
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: hsl(165, 80%, 25%);
+}
+section.image-h100 img {
+  all: unset;
+  display: block;
+  height: 100px;
+  margin: 0 auto;
+}
+section.image-w100 img {
+  all: unset;
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+}
+section.image-h200 img {
+  all: unset;
+  display: block;
+  height: 200px;
+  margin: 0 auto;
+}
+section.image-w200 img {
+  all: unset;
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+section.image-h300 img {
+  all: unset;
+  display: block;
+  height: 300px;
+  margin: 0 auto;
+}
+section.image-w300 img {
+  all: unset;
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+}
+section.image-h400 img {
+  all: unset;
+  display: block;
+  height: 400px;
+  margin: 0 auto;
+}
+section.image-w400 img {
+  all: unset;
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+}
+section.image-h500 img {
+  all: unset;
+  display: block;
+  height: 500px;
+  margin: 0 auto;
+}
+section.image-w500 img {
+  all: unset;
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+}
+section.image-h600 img {
+  all: unset;
+  display: block;
+  height: 600px;
+  margin: 0 auto;
+}
+section.image-w600 img {
+  all: unset;
+  display: block;
+  width: 600px;
+  margin: 0 auto;
+}
+section.image-h700 img {
+  all: unset;
+  display: block;
+  height: 700px;
+  margin: 0 auto;
+}
+section.image-w700 img {
+  all: unset;
+  display: block;
+  width: 700px;
+  margin: 0 auto;
+}
+section.image-h800 img {
+  all: unset;
+  display: block;
+  height: 800px;
+  margin: 0 auto;
+}
+section.image-w800 img {
+  all: unset;
+  display: block;
+  width: 800px;
+  margin: 0 auto;
+}
+section.image-h900 img {
+  all: unset;
+  display: block;
+  height: 900px;
+  margin: 0 auto;
+}
+section.image-w900 img {
+  all: unset;
+  display: block;
+  width: 900px;
+  margin: 0 auto;
+}
+section.image-h1000 img {
+  all: unset;
+  display: block;
+  height: 1000px;
+  margin: 0 auto;
+}
+section.image-w1000 img {
+  all: unset;
+  display: block;
+  width: 1000px;
+  margin: 0 auto;
+}
+section.img_only_h img {
+  all: unset;
+  display: block;
+  height: 625px;
+  margin: 0 auto;
+  margin: 0 auto;
+}
+section.img_only_w img {
+  all: unset;
+  display: block;
+  width: 1240px;
+  margin: 0 auto;
+}
+section.lg p,
+section.lg li {
+  font-size: 1.82rem;
+}
+section.sm p,
+section.sm li {
+  font-size: 1.12rem;
+}
+section.vsm p,
+section.vsm li,
+section.vsm table * {
+  font-size: 0.91rem;
+}
+section.cover {
+  background-color: hsl(25, 80%, 45%);
+  position: relative;
+  align-content: center;
+}
+section.cover::after {
+  color: #82c994;
+}
+section.cover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("./images/ume_logo_mono_2.png");
+  background-position-x: 50%;
+  background-position-y: 30%;
+  background-repeat: no-repeat;
+  background-size: 200%;
+  mix-blend-mode: screen;
+  mask-image: linear-gradient(to bottom right, white, transparent);
+  opacity: 0.5;
+  -webkit-filter: none;
+  filter: none;
+}
+section.cover h1 {
+  color: white;
+  font-size: 3.6rem;
+  font-weight: 800;
+}
+section.cover h2 {
+  display: block;
+  width: 100%;
+  font-size: 2.5rem;
+  font-weight: 500;
+  background-image: unset;
+  background-clip: unset;
+  -webkit-text-fill-color: unset;
+  text-align: center;
+  margin: 0.3em 0;
+  color: #82c994;
+}
+section.cover h2::after {
+  all: unset;
+}
+section.cover h3 {
+  color: #f8e8dc;
+  text-align: center;
+}
+section.cover header {
+  all: unset;
+}
+section.cover footer {
+  color: #82c994;
+}
+section.overview {
+  padding: 0;
+}
+section.overview > div {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+}
+section.overview > div > div {
+  flex: 1 1 0;
+  padding: 100px;
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+section.overview > div > div:first-child {
+  background-color: hsl(25, 80%, 45%);
+  color: white;
+  padding-right: 50px;
+}
+section.overview > div > div:nth-child(2) {
+  flex: 2 1 0;
+}
+section.overview h2 {
+  font-size: 3rem;
+  color: #f8e8dc;
+  background-image: unset;
+  background-clip: unset;
+  -webkit-text-fill-color: unset;
+  padding: 0;
+  margin: 0;
+}
+section.overview h2::after {
+  all: unset;
+}
+section.overview ul {
+  display: flex;
+  flex-flow: column wrap;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  gap: 1em;
+}
+section.overview li {
+  flex: 0 0 auto;
+  padding: 0;
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: hsl(165, 80%, 25%);
+}
+section.overview li::marker {
+  color: #82c994;
+}
+section.overview.sm li {
+  font-size: 1.5rem;
+}
+section.overview > header,
+section.overview > footer {
+  color: #f8e8dc;
+}
+section.sub {
+  padding: 0;
+}
+section.sub > div {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+section.sub > div > div:first-child {
+  flex: 0 0 0;
+  background-color: hsl(25, 80%, 45%);
+  color: white;
+  padding: 100px;
+  padding-top: 101px;
+  padding-bottom: 25px;
+}
+section.sub > div > div:nth-child(2) {
+  flex: 1 1 0;
+  padding: 100px;
+  padding-top: 50px;
+  padding-bottom: 87.5px;
+}
+section.sub h2 {
+  font-size: 3rem;
+  color: #f8e8dc;
+  background-image: unset;
+  background-clip: unset;
+  -webkit-text-fill-color: unset;
+}
+section.sub h2::after {
+  all: unset;
+}
+section.sub ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  height: 100%;
+  flex-flow: column wrap;
+  justify-content: center;
+  gap: 1em;
+}
+section.sub li {
+  flex: 0 0 auto;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: hsl(165, 80%, 25%);
+  margin: 0;
+  padding: 0;
+}
+section.sub li::marker {
+  color: #82c994;
+}
+section.sub.sm li {
+  font-size: 2rem;
+}
+section.sub header {
+  color: #f8e8dc;
+}
+footer, header {
+  width: 100%;
+  color: hsl(165, 80%, 25%);
+  position: absolute;
+  padding-left: 100px;
+  left: 0;
+  align-content: center;
+}
+
+header {
+  height: 100px;
+  background-color: hsl(25, 80%, 45%);
+  color: #f8e8dc;
+  font-size: 1.5rem;
+  top: 0;
+}
+
+footer {
+  height: 75px;
+  bottom: 0;
+}
+
+h1 {
+  font-size: 120px;
+  text-align: center;
+}
+
+h2 {
+  display: inline-block;
+  width: max-content;
+  font-size: 2.5rem;
+  font-weight: 800;
+  padding: 0;
+  margin: 0;
+}
+h2::after {
+  content: "";
+  display: block;
+  width: 200%;
+  max-width: 700px;
+  height: 7px;
+  margin-top: 10px;
+  margin-bottom: 1em;
+  background-color: #e2a174;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #d98245;
+  margin: 0;
+  margin-bottom: 0.8em;
+  position: relative;
+  left: 2.34rem;
+}
+h3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0.3em;
+  left: calc(0em - 2.34rem);
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: #82c994;
+}
+
+h4 {
+  font-size: 1.44rem;
+  font-weight: 700;
+  color: hsl(25, 80%, 45%);
+  opacity: 0.8;
+  margin: 0;
+  margin-bottom: 0.6em;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.7em;
+  margin: 0;
+  margin-bottom: 1em;
+  color: #d98245;
+}
+
+table {
+  border: 1px solid hsl(165, 80%, 25%);
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #82c994;
+  border-collapse: collapse;
+  padding: 0.4em;
+}
+
+tr {
+  color: #d98245;
+}
+tr:nth-child(2n) * {
+  background-color: #f8e8dc;
+  color: hsl(25, 80%, 45%);
+}
+
+th {
+  background-color: #82c994;
+}
+
+li {
+  font-size: 1.4rem;
+  opacity: 0.8;
+  margin: 0.4em 0;
+}
+li::marker {
+  color: hsl(165, 80%, 25%);
+}
+
+a {
+  color: hsl(165, 80%, 25%);
+}
+
+.center {
+  text-align: center;
+}
+
+div.columns-2 {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 2em;
+}
+div.columns-2 > div {
+  flex: 1 1 0;
+}
+
+div.mail {
+  border: 2px solid #6eab9b;
+  border-radius: 0.3em;
+  padding: 25px;
+}
+div.mail > div {
+  border-top: 1px solid #82c994;
+  border-bottom: 1px solid #82c994;
+}
+div.mail * {
+  font-size: 0.98rem;
+}
+
+blockquote {
+  border-radius: 1em;
+  background-color: #f5e0d1;
+  padding: 0.7em;
+}
+blockquote p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=orange.css.map */

@@ -27,6 +27,11 @@ $accent: color.adjust($secondary, $hue: 24, $saturation: -10%, $lightness: 25%);
     $secondary: hsl($hue: 165, $saturation: 80%, $lightness: 25%);
     $accent: color.adjust($secondary, $hue: -30, $saturation: -40%, $lightness: 40%);
 }
+@if $scheme == 5 {
+    $primary: hsl($hue: 25, $saturation: 80%, $lightness: 45%);
+    $secondary: hsl($hue: 165, $saturation: 80%, $lightness: 25%);
+    $accent: color.adjust($secondary, $hue: -30, $saturation: -40%, $lightness: 40%);
+}
 
 $white: color.mix($primary, white, 15%);
 $primary-light-20: color.mix($primary, white, 20%);
