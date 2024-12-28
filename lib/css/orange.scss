@@ -1,0 +1,7 @@
+/* @theme ume-orange */
+
+@use './marp_ume_default' as default with (
+
+    $color-scheme: 5
+
+); 
