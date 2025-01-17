@@ -3,7 +3,7 @@ marp : true
 theme: ume-orange
 paginate: true
 header : IS 対応マニュアル FS 引き継ぎ対応
-footer : 2024.12.23 Mon マーケティング部 小松
+footer : 2025.01.17 Fri マーケティング部 小松
 transition : pull 300ms
 ---
 <!-- _paginate : skip -->
@@ -35,7 +35,7 @@ transition : pull 300ms
 
 ---
 <!-- _header : IS 対応マニュアル FS 引き継ぎ対応 -->
-<span id="handover">
+<span id="handover"></span>
 
 ## FS引継ぎとは
 
@@ -46,7 +46,7 @@ ISとFS兼任の場合、ISとしての対応が完了し、FSとしての対応
 
 ---
 <!-- _header : IS 対応マニュアル FS 引き継ぎ対応 -->
-<span id="timing">
+<span id="timing"></span>
 
 ## FS引継ぎタイミング
 
