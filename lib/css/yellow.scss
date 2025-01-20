@@ -1,0 +1,7 @@
+/* @theme ume-yellow */
+
+@use './marp_ume_default' as default with (
+
+    $color-scheme: 4
+
+); 

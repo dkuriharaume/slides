@@ -21,10 +21,11 @@ $accent: hsl(42, 83%, 63%);
 
 }
 
-@if $scheme == 4 {
-    $primary: hsl($hue: 22, $saturation: 50%, $lightness: 20%);
-    $secondary: hsl($hue: 165, $saturation: 80%, $lightness: 25%);
-    $accent: color.adjust($secondary, $hue: -30, $saturation: -40%, $lightness: 40%);
+@if $scheme == 4 {//yellow
+
+    $primary: hsl(51, 100%, 28%);
+    $secondary: hsl(236, 51%, 35%);
+    $accent: hsl(161, 93%, 78%);
 }
 @if $scheme == 5 { //orange
     $primary: hsl(17, 57%, 48%);
