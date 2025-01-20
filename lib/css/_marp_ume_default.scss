@@ -665,4 +665,29 @@ blockquote {
     }
 }
 
+div.flex-columns-200{
+    display:flex;
+    flex: {
+        wrap: wrap;
+        direction: row;
+    }
+    justify-content: center;
+
+    & > div {
+        height: 200px;
+        flex: {
+            grow: 1;
+            shrink: 1;
+            basis: auto;
+        }
+        object-fit: contain;
+        object-position: center;
+        & img {
+            height: 200px;
+            width: auto;
+            object-fit: contain;
+        }
+    }
+}
+
 // #endregion

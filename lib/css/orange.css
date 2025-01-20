@@ -535,4 +535,24 @@ blockquote p {
   font-size: 1rem;
 }
 
+div.flex-columns-200 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+div.flex-columns-200 > div {
+  height: 200px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  object-fit: contain;
+  object-position: center;
+}
+div.flex-columns-200 > div img {
+  height: 200px;
+  width: auto;
+  object-fit: contain;
+}
+
 /*# sourceMappingURL=orange.css.map */
